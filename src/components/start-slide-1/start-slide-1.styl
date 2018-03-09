@@ -1,0 +1,95 @@
+.start-slide-1
+	height 100vh
+	min-height 630px
+	background url("/images/start-slide-1_bg.png") right top no-repeat
+	background-size cover
+	color #fff
+	&__header
+		display flex
+		justify-content space-between
+		align-items center
+		padding 36px 36px 0
+	&__logos
+		position relative
+		display flex
+		align-items center
+		&::before
+			content ""
+			position absolute
+			left 62px
+			top 0
+			width 1px
+			height 40px
+			background rgba(255,255,255,.5)
+		&_postnauka
+			display inline-block
+			margin-right 43px
+			height 40px
+		&_bc
+			position relative
+			top 1px
+			height 32px
+	&__nav-link
+		display flex
+		align-items center
+		width 115px
+		&_text
+			width 59px
+			margin-right 16px
+			font-weight 1rem
+			text-align right
+		&_circle
+			display block
+			position relative
+			width 40px
+			height 40px
+			border-radius 50%
+			background #fff
+			&::before,
+			&::after
+				display inline-block
+				position absolute
+				top 50%
+				left 50%
+				transform translate(-50%, -50%)
+				content ""
+				background #000
+			&::before
+				width 14px
+				height 1px
+			&::after
+				width 1px
+				height 14px
+	&__container
+		height 100%
+	&__text-block
+		height calc(100% - 80px)
+		max-width 680px
+		display flex
+		flex-direction column
+		justify-content space-around
+		padding-bottom 40px
+	&__title
+		margin-top 68px
+		margin-bottom 20px
+		font-size 5rem
+		line-height 1
+		font-weight normal
+	&__description
+		margin-bottom 108px
+		font-size 2rem
+		line-height 1.5
+		&_cursive
+			font-style italic
+			color rgba(255,255,255,.6)
+	&__read-more
+		font-size 1rem
+		&::after
+			position relative
+			top 2px
+			display inline-block
+			margin-left 7px
+			content ""
+			width 11px
+			height 14px
+			background url("/images/start-slide-sprite.png") -92px -41px no-repeat

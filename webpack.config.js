@@ -111,6 +111,30 @@ module.exports = {
     new CopyPlugin([{
       from: path.resolve(__dirname, './src/components/lecture_preview/lecture_preview.styl'),
       to: path.resolve(__dirname, "./dist/components/lecture_preview/style.styl")
+    }]),
+
+    // for start-slide-1
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/start-slide-1/component.html"),
+      template: path.resolve(__dirname, "./src/components/start-slide-1/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/start-slide-1/start-slide-1.styl'),
+      to: path.resolve(__dirname, "./dist/components/start-slide-1/style.styl")
+    }]),
+
+    // for start-slide-1
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/start-slide-2/component.html"),
+      template: path.resolve(__dirname, "./src/components/start-slide-2/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/start-slide-2/start-slide-2.styl'),
+      to: path.resolve(__dirname, "./dist/components/start-slide-2/style.styl")
     }])
   ]
 };
