@@ -135,6 +135,18 @@ module.exports = {
     new CopyPlugin([{
       from: path.resolve(__dirname, './src/components/start-slide-2/start-slide-2.styl'),
       to: path.resolve(__dirname, "./dist/components/start-slide-2/style.styl")
+    }]),
+
+    // for menu
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/menu/component.html"),
+      template: path.resolve(__dirname, "./src/components/menu/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/menu/menu.styl'),
+      to: path.resolve(__dirname, "./dist/components/menu/style.styl")
     }])
   ]
 };
