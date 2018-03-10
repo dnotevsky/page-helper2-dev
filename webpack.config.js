@@ -147,6 +147,18 @@ module.exports = {
     new CopyPlugin([{
       from: path.resolve(__dirname, './src/components/menu/menu.styl'),
       to: path.resolve(__dirname, "./dist/components/menu/style.styl")
+    }]),
+
+    // for popup-photos
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/popup-photos/component.html"),
+      template: path.resolve(__dirname, "./src/components/popup-photos/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/popup-photos/popup-photos.styl'),
+      to: path.resolve(__dirname, "./dist/components/popup-photos/style.styl")
     }])
   ]
 };

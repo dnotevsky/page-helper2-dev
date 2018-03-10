@@ -1,0 +1,158 @@
+.popup-photos
+	position relative
+	height 100vh
+	min-height 880px
+	background #070707
+	color #fff
+	&__header
+		display flex
+		justify-content space-between
+		align-items center
+		padding 36px 36px 0
+	&__title
+		max-width 250px
+		font-size 1.25rem
+		line-height 1.5
+	&__nav-link
+		&_circle
+			display block
+			position relative
+			width 40px
+			height 40px
+			border-radius 50%
+			background #fff
+			&::before,
+			&::after
+				display inline-block
+				position absolute
+				top 50%
+				left 50%
+				transform translate(-50%, -50%)
+				content ""
+				background #000
+			&::before
+				width 19px
+				height 1px
+				transform translate(-50%, -50%) rotate(-45deg)
+			&::after
+				width 1px
+				height 19px
+				transform translate(-50%, -50%) rotate(-45deg)
+	&__slider
+		overflow-x scroll
+		&-track
+			padding 44px 470px 140px
+			display flex
+			width 10000px
+			height 803px
+			align-items flex-start
+	&__slide
+		margin 0 50px
+		overflow hidden
+		&.active
+			opacity 1
+			.popup-photos__description
+				opacity 1
+			.popup-photos__num
+				opacity 1
+			.popup-photos__translate
+				opacity 1
+		&.inactive
+			opacity .3
+			.popup-photos__description
+				opacity 0
+			.popup-photos__num
+				opacity 0
+			.popup-photos__translate
+				opacity 0
+	&__img-block
+		height 619px
+		display flex
+		justify-content center
+		align-items center
+	&__description
+		position absolute
+		left 36px
+		bottom 72px
+		max-width 330px
+		font-size 1.25rem
+		line-height 1.5
+	&__num
+		position absolute
+		left 36px
+		bottom 36px
+		font-size 1rem
+		line-height 1.5
+	&__translate
+		position absolute
+		bottom 0
+		left 50%
+		transform translate(-50%)
+		font-size 1rem
+		line-height 1.5
+		font-weight bold
+		width 350px
+		&::after
+			content ""
+			background url("/images/start-slide-sprite.png") -92px -41px no-repeat
+			width 12px
+			height 14px
+			display inline-block
+			margin-left 16px
+			top 3px
+			position relative
+	&__translation
+		width 570px
+		text-align center
+		position relative
+		&-shadow_big
+			height 835px
+			width calc(100% + 2px)
+			position absolute
+			top -640px
+			left -2px
+			background linear-gradient(to bottom, rgba(0,0,0,.6) 0%, rgba(0,0,0,.6) 95%, rgba(255,255,255,0) 100%)
+			z-index 10
+		&-shadow_small
+			height 113px
+			width calc(100% + 2px)
+			position absolute
+			top 64px
+			left -2px
+			background linear-gradient(to bottom, rgba(0,0,0,.8), rgba(255,255,255,0))
+			z-index 10
+		&.show
+			margin-top 16px
+			.popup-photos__translate
+				position relative
+				top 0
+				left 0
+				z-index 11
+				&::after
+					transform rotate(-180deg)
+			.popup-photos__translation_text
+				display block
+				height 540px
+				text-align left
+			.popup-photos__translation-shadow_big
+				opacity 1
+			.popup-photos__translation-shadow_small
+				opacity 1
+		&.hide
+			margin-top 82px
+			.popup-photos__translation_text
+				display none
+				height 0
+			.popup-photos__translation-shadow_big
+				opacity 0
+			.popup-photos__translation-shadow_small
+				opacity 0
+		&_text
+			position relative
+			margin-top 42px
+			padding-bottom 198px
+			font-size 1.25rem
+			line-height 1.5
+			width 590px
+			padding-right 20px
+			overflow auto
