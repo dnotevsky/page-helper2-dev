@@ -17,7 +17,7 @@ x
 
 x
 .bg-read_more_arrow {
-    width: 11px; height: 14px;
+    width: 12px; height: 14px;
     background: url('css_sprites.png') -92px -41px;
 }
 

@@ -1,7 +1,8 @@
 .fake
 	/*временный margin для отображения на одной странице с другими компонентами*/
 	margin-top 100px
-	background #D6D2CD
+	background url("/images/Darvin-Timiryazev/darvin.png") left 130px no-repeat, #D6D2CD
+	background-size 19%, auto
 	color #000
 	&__header
 		margin-bottom -12px
@@ -176,4 +177,54 @@
 					height 10px
 					top -1px
 					background url("/images/video-sprite.png") -46px -10px no-repeat
-					
+	&__gallery
+		padding 172px 0 151px
+		background #1B1A1A
+		
+		&-wrap
+			margin-bottom 55px
+			display flex
+			justify-content space-between
+			align-items center
+			overflow hidden
+			img
+				display inline-block
+				margin 0 20px
+				&:first-child
+					margin-left 0
+				&:last-child
+					margin-right 0
+		.fake__events
+			padding 0 20px
+		&-category
+			display inline-block
+			margin-bottom 12px
+			letter-spacing 2px
+			font-size .75rem
+			color rgba(255,255,255,.6)
+			line-height 1.33
+			text-transform uppercase
+		&-title
+			margin-bottom 8px
+			color #fff
+			font-size 1.5rem
+			line-height 1.5
+		&-description
+			margin-bottom 16px
+			color #fff
+			font-size 1.125rem
+			line-height 1.5
+		&-link
+			font-weight bold
+			color #E34F2D
+			font-size 1rem
+			&::after
+				width 12px
+				height 14px
+				content ""
+				margin-left 9px
+				top 2px
+				position relative
+				display inline-block
+				background url("/images/start-slide-sprite.png") -92px -41px no-repeat;
+				transform rotate(-180deg)
