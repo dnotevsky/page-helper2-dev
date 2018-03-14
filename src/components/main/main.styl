@@ -1,9 +1,10 @@
-.start-slide-1
+.main
 	height 100vh
-	min-height 630px
-	background url("/images/start-slide-1_bg.png") right top no-repeat
+	min-height 650px
+	background url("/images/main_bg.png") right top no-repeat
 	background-size cover
 	color #fff
+	font-family "Cisco Sans", sans-serif
 	&__header
 		display flex
 		justify-content space-between
@@ -30,6 +31,9 @@
 			top 1px
 			height 32px
 	&__nav-link
+		position fixed
+		top 36px
+		right 36px
 		display flex
 		align-items center
 		width 115px
@@ -63,27 +67,32 @@
 	&__container
 		height 100%
 	&__text-block
+		position relative
 		height calc(100% - 80px)
 		max-width 680px
 		display flex
 		flex-direction column
-		justify-content space-around
+		justify-content center
 		padding-bottom 40px
 	&__title
-		margin-top 68px
-		margin-bottom 20px
+		margin-bottom 47px
 		font-size 5rem
 		line-height 1
-		font-weight normal
+		font-family "Helios"
+		font-weight 900
 	&__description
-		margin-bottom 108px
 		font-size 2rem
 		line-height 1.5
 		&_cursive
+			font-family "SangBleu Sunrise"
 			font-style italic
 			color rgba(255,255,255,.6)
 	&__read-more
+		position absolute
+		bottom 40px
 		font-size 1rem
+		font-weight bold
+		letter-spacing .5px
 		&::after
 			position relative
 			top 2px
@@ -92,4 +101,4 @@
 			content ""
 			width 11px
 			height 14px
-			background url("/images/start-slide-sprite.png") -92px -41px no-repeat
+			background url("/images/main-sprite.png") -92px -41px no-repeat
