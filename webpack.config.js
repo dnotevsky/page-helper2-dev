@@ -125,16 +125,16 @@ module.exports = {
       to: path.resolve(__dirname, "./dist/components/main/style.styl")
     }]),
 
-    // for start-slide-2
+    // for description
     new HTMLPlugin({
-      filename: path.resolve(__dirname, "./dist/components/start-slide-2/component.html"),
-      template: path.resolve(__dirname, "./src/components/start-slide-2/component.pug"),
+      filename: path.resolve(__dirname, "./dist/components/description/component.html"),
+      template: path.resolve(__dirname, "./src/components/description/component.pug"),
       hash: false,
       inject: false
     }),
     new CopyPlugin([{
-      from: path.resolve(__dirname, './src/components/start-slide-2/start-slide-2.styl'),
-      to: path.resolve(__dirname, "./dist/components/start-slide-2/style.styl")
+      from: path.resolve(__dirname, './src/components/description/description.styl'),
+      to: path.resolve(__dirname, "./dist/components/description/style.styl")
     }]),
 
     // for menu

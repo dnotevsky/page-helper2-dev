@@ -1,8 +1,9 @@
-.start-slide-2
+.description
 	height 100vh
 	min-height 472px
 	background #010101
 	color #fff
+	font-family "SangBleu Sunrise", sans-serif
 	&__container
 		height 100%
 		display flex
@@ -13,19 +14,19 @@
 		column-gap 60px
 	&__text
 		font-size 1.5rem
-		line-height 1.5		
+		line-height 1.5
+		letter-spacing 1px	
 		&:first-child
-			max-width 500px
+			max-width 550px
 		&:nth-last-child(2)
-			padding-top 15px
 			position relative
 			&::after
 				content ""
-				position absolute
+				position relative
+				display inline-block
+				right -10px
 				width 16px
 				height 16px
-				right 40px
-				bottom -16px
 				background url("/images/postnauka.png") center center no-repeat
 				background-size 100%
 		&_first-letter
@@ -37,14 +38,17 @@
 			top -8px
 			font-size 4.375rem
 			line-height 1.17
+			font-family "Cisco Sans"
+			font-weight 900
 		&_cursive
 			font-style italic
 	&__share
-		margin-top 78px
+		margin-top 24px
 		&-text
 			display block
 			margin-bottom 8px
 			font-size 1.25rem
+			font-family "Cisco Sans"
 			color rgba(255,255,255,.6)
 		&-links
 			display flex
@@ -64,7 +68,7 @@
 					top 50%
 					left 50%
 					transform translate(-50%, -50%)
-					background-image url("/images/start-slide-sprite.png")
+					background-image url("/images/main-sprite.png")
 					background-repeat no-repeat
 			&_vk
 				background #517398
