@@ -149,6 +149,18 @@ module.exports = {
       to: path.resolve(__dirname, "./dist/components/event/style.styl")
     }]),
 
+    // for event_2
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_2/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_2/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_2/event_2.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_2/style.styl")
+    }]),
+
     // for video
     new HTMLPlugin({
       filename: path.resolve(__dirname, "./dist/components/video/component.html"),
@@ -159,6 +171,18 @@ module.exports = {
     new CopyPlugin([{
       from: path.resolve(__dirname, './src/components/video/video.styl'),
       to: path.resolve(__dirname, "./dist/components/video/style.styl")
+    }]),
+
+    // for video_2
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/video_2/component.html"),
+      template: path.resolve(__dirname, "./src/components/video_2/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/video_2/video_2.styl'),
+      to: path.resolve(__dirname, "./dist/components/video_2/style.styl")
     }])
   ]
 };
