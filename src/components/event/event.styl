@@ -1,80 +1,29 @@
-.fake
-	/*временный margin для отображения на одной странице с другими компонентами*/
-	margin-top 100px
-	background url("/images/Darvin-Timiryazev/darvin.png") left 130px no-repeat, #D6D2CD
-	background-size 19%, auto
-	color #000
-	&__header
-		margin-bottom -12px
-		display flex
-		justify-content flex-end
-		align-items center
-		padding 36px 36px 0
-	&__nav-link
-		display flex
-		align-items center
-		&_text
-			margin-right 16px
-			font-size 1rem
-			text-align right
-			color #000
-			opacity .6
-		&_circle
-			display block
-			position relative
-			width 40px
-			height 40px
-			border-radius 50%
-			background #EB663A
-			&::before,
-			&::after
-				display inline-block
-				position absolute
-				top 50%
-				left 50%
-				transform translate(-50%, -50%)
-				content ""
-				background #fff
-			&::before
-				width 14px
-				height 1px
-			&::after
-				width 1px
-				height 14px
+.event
+	position relative
+	margin 0 auto 64px
+	width 770px
+	&__date
+		position absolute
+		top 0
+		left -135px
+		font-size 1.5rem
+		line-height 1.5
+		font-family "Helios"
+		font-weight 900
+		color rgba(0,0,0,.5)
 	&__title
-		margin-bottom 92px
+		margin-bottom 16px
 		font-weight normal
-		font-size 5rem
-		line-height 1
-	&__events
-		max-width 770px
-		margin 0 auto
-	&__event
-		margin-bottom 48px
-		&-title
-			margin 0 0 24px -84px
-			font-weight normal
-			font-size 1.5rem
-			line-height 1.5
-			&_date
-				margin-right 30px
-				display inline-block
-				opacity .5
-		&-img
-			margin-bottom 24px
-			height 339px
-			display flex
-			justify-content center
-			align-items center
-			border-radius 4px
-			background url("/images/Darvin-Timiryazev/dots.png") right top no-repeat, #F2F2F2
-			box-shadow 0 4px 6px rgba(0, 0, 0, 0.05)
-		&-text
-			font-size 1.125rem
-			line-height 1.5
-			&_cursive
-				font-style italic
-	&__video
+		font-size 1.5rem
+		line-height 1.5
+		font-family "Helios"
+	&__text
+		font-size 1.125rem
+		line-height 1.5
+		p
+			margin-bottom 12px
+
+	/*&__video
 		margin-bottom 80px
 		padding-top 28px
 		background #FFFFFF
@@ -227,4 +176,4 @@
 				position relative
 				display inline-block
 				background url("/images/start-slide-sprite.png") -92px -41px no-repeat;
-				transform rotate(-180deg)
+				transform rotate(-180deg)*/

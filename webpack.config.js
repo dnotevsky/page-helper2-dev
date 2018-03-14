@@ -137,40 +137,16 @@ module.exports = {
       to: path.resolve(__dirname, "./dist/components/description/style.styl")
     }]),
 
-    // for menu
+    // for event
     new HTMLPlugin({
-      filename: path.resolve(__dirname, "./dist/components/menu/component.html"),
-      template: path.resolve(__dirname, "./src/components/menu/component.pug"),
+      filename: path.resolve(__dirname, "./dist/components/event/component.html"),
+      template: path.resolve(__dirname, "./src/components/event/component.pug"),
       hash: false,
       inject: false
     }),
     new CopyPlugin([{
-      from: path.resolve(__dirname, './src/components/menu/menu.styl'),
-      to: path.resolve(__dirname, "./dist/components/menu/style.styl")
-    }]),
-
-    // for popup-photos
-    new HTMLPlugin({
-      filename: path.resolve(__dirname, "./dist/components/popup-photos/component.html"),
-      template: path.resolve(__dirname, "./src/components/popup-photos/component.pug"),
-      hash: false,
-      inject: false
-    }),
-    new CopyPlugin([{
-      from: path.resolve(__dirname, './src/components/popup-photos/popup-photos.styl'),
-      to: path.resolve(__dirname, "./dist/components/popup-photos/style.styl")
-    }]),
-
-    // for fake
-    new HTMLPlugin({
-      filename: path.resolve(__dirname, "./dist/components/fake/component.html"),
-      template: path.resolve(__dirname, "./src/components/fake/component.pug"),
-      hash: false,
-      inject: false
-    }),
-    new CopyPlugin([{
-      from: path.resolve(__dirname, './src/components/fake/fake.styl'),
-      to: path.resolve(__dirname, "./dist/components/fake/style.styl")
+      from: path.resolve(__dirname, './src/components/event/event.styl'),
+      to: path.resolve(__dirname, "./dist/components/event/style.styl")
     }])
   ]
 };

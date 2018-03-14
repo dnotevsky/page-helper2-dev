@@ -21,7 +21,6 @@ textarea
 	
 /*Общие стили*/
 html
-	font-family "Arial", sans-serif
 	font-size 16px
 	line-height 1.25
 	
@@ -32,9 +31,72 @@ html
 	
 .container
 	width 100%
-	max-width 1210px
+	max-width 1170px
 	padding 0 20px
 	margin 0 auto
 	
 .row
 	display flex
+	
+
+//Стили контента
+.content
+	padding 64px 0 0
+	background url("/images/Lobachevskiy-Kliffod/bg_1.png") right 252px no-repeat, url("/images/Lobachevskiy-Kliffod/bg_2.png") right 1763px no-repeat, #D6D2CD
+	background-size 19%, 19%, auto
+	color #000
+	font-family "Cisco Sans"
+	&__nav-link
+		position fixed
+		right 36px
+		top 36px
+		display flex
+		align-items center
+		&_text
+			margin-right 16px
+			font-size 1rem
+			text-align right
+			color #000
+			opacity .6
+		&_circle
+			display block
+			position relative
+			width 40px
+			height 40px
+			border-radius 50%
+			background #EB663A
+			&::before,
+			&::after
+				display inline-block
+				position absolute
+				top 50%
+				left 50%
+				transform translate(-50%, -50%)
+				content ""
+				background #fff
+			&::before
+				width 14px
+				height 1px
+			&::after
+				width 1px
+				height 14px
+	&__title
+		margin-bottom 92px
+		font-size 5rem
+		line-height 1
+		font-family "Helios"
+		font-weight 900
+
+.events
+	position relative
+	&::before
+		position absolute
+		top 46px
+		left 63px
+		content ""
+		width 1px
+		height calc(100% - 783px)
+		background rgba(0,0,0,.1)
+
+
+
