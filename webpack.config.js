@@ -183,6 +183,18 @@ module.exports = {
     new CopyPlugin([{
       from: path.resolve(__dirname, './src/components/video_2/video_2.styl'),
       to: path.resolve(__dirname, "./dist/components/video_2/style.styl")
+    }]),
+
+    // for fact
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/fact/component.html"),
+      template: path.resolve(__dirname, "./src/components/fact/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/fact/fact.styl'),
+      to: path.resolve(__dirname, "./dist/components/fact/style.styl")
     }])
   ]
 };
