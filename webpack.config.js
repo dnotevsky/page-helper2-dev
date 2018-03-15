@@ -207,6 +207,18 @@ module.exports = {
     new CopyPlugin([{
       from: path.resolve(__dirname, './src/components/nav/nav.styl'),
       to: path.resolve(__dirname, "./dist/components/nav/style.styl")
+    }]),
+
+    // for event_3
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_3/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_3/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_3/event_3.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_3/style.styl")
     }])
   ]
 };

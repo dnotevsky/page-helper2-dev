@@ -9,6 +9,7 @@ html.ua(lang="ru")
 
 	body
 		+header
+		//- Страница 1
 		div.wrapper
 			+main
 			+description
@@ -25,4 +26,16 @@ html.ua(lang="ru")
 						+video_2
 			+fact
 			+nav
+
+		//- Страница 2
+		div.wrapper
+			div.content.content_2
+				a.content__nav-link(href="#")
+					span.content__nav-link_text Все<br/>встречи
+					span.content__nav-link_circle
+				div.container.content__container
+					h1.content__title Дарвин и<br/>Тимирязев
+					div.events
+						+event_3
+
 		+footer
