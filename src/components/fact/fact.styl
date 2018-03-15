@@ -2,11 +2,14 @@
 	position relative
 	height 100vh
 	min-height 650px
-	padding 64px 0
+	padding 53px 0
 	color #fff
 	font-family "Cisco Sans", sans-serif
-	background url("/images/Lobachevskiy-Kliffod/fact-bg_1.png") left 260px no-repeat, url("/images/Lobachevskiy-Kliffod/fact-bg_2.png") right 230px no-repeat, #1B1A1A
-	background-size 13%, 17%, auto
+	background url("/images/Lobachevskiy-Kliffod/fact-bg_1.png") left 220px no-repeat, url("/images/Lobachevskiy-Kliffod/fact-bg_2.png") right 200px no-repeat, #1b1a1a
+	background-size 16%, 21%, auto
+	@media only screen and (max-width 1250px)
+		background url("/images/Lobachevskiy-Kliffod/fact-bg_1.png") left 520px no-repeat, url("/images/Lobachevskiy-Kliffod/fact-bg_2.png") right 200px no-repeat, #1b1a1a
+		background-size 14%, 17%, auto
 	&__nav-link
 		position absolute
 		top 36px
@@ -39,7 +42,7 @@
 				width 1px
 				height 14px
 	&__h2
-		margin-bottom 50px
+		margin-bottom 24px
 		font-family "Helios"
 		font-weight 900
 		font-size 2.5rem
@@ -65,8 +68,10 @@
 		font-weight 900
 		color rgba(255,255,255,.5)
 		text-align right
+		@media only screen and (max-width 1199px)
+			left -13px
 	&__title
-		margin-bottom 16px
+		margin-bottom 23px
 		font-weight normal
 		font-size 1.5rem
 		line-height 1.5
