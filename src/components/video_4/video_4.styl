@@ -1,0 +1,121 @@
+.video
+	position relative
+	margin 0 auto 59px
+	width 770px
+	padding-top 25px
+	background #FFFFFF
+	border-radius 4px
+	box-shadow 0 2px 3px rgba(0,0,0,0.1)
+	&::before
+		position absolute
+		left -102px
+		top -13px
+		content ""
+		width 52px
+		height 48px
+		border 10px solid #D6D2CD
+		border-top-width 3px
+		background url("/images/video.png") center center no-repeat, #D6D2CD
+	&__category
+		display inline-block
+		margin-bottom 6px
+		padding-left 30px
+		letter-spacing 3px
+		font-size .75rem
+		color rgba(0,0,0,.6)
+		line-height 1.33
+		text-transform uppercase
+	&__title
+		margin-bottom 24px
+		padding-left 27px
+		font-size 1.5rem
+		line-height 1.33
+		font-weight normal
+		&_author
+			color rgba(0,0,0,.6)
+	&__iframe
+		position relative
+		height 434px
+		padding 36px 36px 40px
+		background-size 100%
+		background-position center center
+		background-repeat no-repeat
+		&-logos
+			position relative
+			width 310px
+			height 65px
+			display flex
+			justify-content space-between
+			align-items center
+			&::after
+				content ""
+				width 1px
+				height 65px
+				position absolute
+				top 0
+				left 101px
+				background rgba(255,255,255,.5)
+			&_postnauka
+				height 65px
+			&_bc
+				height 51px
+		&-text
+			height calc(100% - 65px)
+			display flex
+			flex-direction column
+			justify-content flex-end
+		&-title
+			margin-bottom 16px
+			font-size 2.5rem
+			line-height 1
+			color #fff
+			font-family "Druk Text Wide"
+			font-weight 900
+		&-author
+			font-size 2.5rem
+			line-height 1
+			color #fff
+			font-style italic
+			font-family "SangBleu Sunrise"
+		&-btn
+			display block
+			position absolute
+			left 50%
+			top 50%
+			transform translate(-50%, -50%)
+			margin-top -30px
+			width 73px
+			height 50px
+			background url("/images/youtube-play.svg") center center no-repeat
+	&__bottom
+		display flex
+		justify-content space-between
+		align-items center
+		padding 17px 30px
+		&-share
+			color rgba(0, 0, 0, 0.6)
+			font-size 1rem
+			text-decoration none
+			line-height 1.5
+			&::before
+				margin-right 8px
+				content ""
+				position relative
+				display inline-block
+				width 16px
+				height 14px
+				top 1px
+				background url("/images/video-sprite.png") -10px -10px no-repeat
+		&-text
+			color rgba(0, 0, 0, 0.6)
+			font-size 1rem
+			text-decoration none
+			line-height 1.5
+			&::before
+				margin-right 10px
+				content ""
+				position relative
+				display inline-block
+				width 10px
+				height 10px
+				background url("/images/video-sprite.png") -46px -10px no-repeat

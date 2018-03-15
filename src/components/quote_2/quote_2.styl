@@ -1,0 +1,49 @@
+.quote
+	position relative
+	margin -39px auto 63px
+	width 770px
+	padding 24px 30px 28px
+	background #F2F2F2
+	border-radius 4px
+	box-shadow 0 2px 3px rgba(0,0,0,0.1)
+	font-family "Cisco Sans", sans-serif
+	&::before
+		position absolute
+		left -91px
+		top -5px
+		content ""
+		width 32px
+		height 34px
+		border 10px solid #D6D2CD
+		border-top-width 3px
+		background url("/images/quote.png") center center no-repeat, #D6D2CD
+	&__author
+		margin-bottom 20px
+		height 40px
+		line-height 40px
+		font-size 1rem
+		font-weight normal
+		color rgba(0,0,0,.6)
+		&_img
+			display inline-block
+			margin-right 12px
+			width 40px
+			border-radius 50%
+		&_text
+			position relative
+			top -16px
+	&__text
+		margin-bottom 9px
+		font-size 1.25rem
+		line-height 1.6
+		&_big
+			margin-top -13px
+			margin-bottom 6px
+			font-size 1.5rem
+			line-height 1.5
+			font-family "Helios"
+	&__cite
+		color rgba(0,0,0,.6)
+		font-size 1rem
+		line-height 1.5
+		font-family "Helios"
