@@ -65,6 +65,12 @@ html
 			height 40px
 			border-radius 50%
 			background #EB663A
+			transition .5s ease-in-out all
+			&:hover
+				background #fff
+				&::before,
+				&::after
+					background #EB663A
 			&::before,
 			&::after
 				display inline-block
@@ -74,6 +80,7 @@ html
 				transform translate(-50%, -50%)
 				content ""
 				background #fff
+				transition .5s ease-in-out all
 			&::before
 				width 14px
 				height 1px
