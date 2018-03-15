@@ -339,6 +339,30 @@ module.exports = {
     new CopyPlugin([{
       from: path.resolve(__dirname, './src/components/event_8/event_8.styl'),
       to: path.resolve(__dirname, "./dist/components/event_8/style.styl")
+    }]),
+
+    // for fact_2
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/fact_2/component.html"),
+      template: path.resolve(__dirname, "./src/components/fact_2/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/fact_2/fact_2.styl'),
+      to: path.resolve(__dirname, "./dist/components/fact_2/style.styl")
+    }]),
+
+    // for nav_2
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/nav_2/component.html"),
+      template: path.resolve(__dirname, "./src/components/nav_2/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/nav_2/nav_2.styl'),
+      to: path.resolve(__dirname, "./dist/components/nav_2/style.styl")
     }])
   ]
 };
