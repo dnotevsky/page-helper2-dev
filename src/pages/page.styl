@@ -51,7 +51,13 @@ html
 		background-size 16%, 20%, auto
 	&_2
 		background url("/images/Darvin-Timiryazev/bg_1.png") left 130px no-repeat, url("/images/Darvin-Timiryazev/bg_2.png") right 2175px no-repeat, url("/images/Darvin-Timiryazev/bg_3.png") left 3676px no-repeat, #d6d2cd
-		background-size 16%, 20%, 18%, auto
+		background-size 20%, 15.5%, 14%, auto
+		@media only screen and (max-width 1199px)
+			background url("/images/Darvin-Timiryazev/bg_1.png") left 230px no-repeat, url("/images/Darvin-Timiryazev/bg_2.png") right 2175px no-repeat, url("/images/Darvin-Timiryazev/bg_3.png") left 3576px no-repeat, #d6d2cd
+			background-size 16%, 20%, auto
+		.events
+			&::before
+				height calc(100% - 540px)
 	&__nav-link
 		position fixed
 		right 36px
