@@ -41,17 +41,21 @@ html
 
 //Стили контента
 .content
-	padding 64px 0 0
-	background url("/images/Lobachevskiy-Kliffod/bg_1.png") right 252px no-repeat, url("/images/Lobachevskiy-Kliffod/bg_2.png") left 1463px no-repeat, #D6D2CD
-	background-size 19%, 23%, auto
+	padding 42px 0 0
+	background url("/images/Lobachevskiy-Kliffod/bg_1.png") right 330px no-repeat, url("/images/Lobachevskiy-Kliffod/bg_2.png") left 1420px no-repeat, #d6d2cd
+	background-size 16%, 20%, auto
 	color #000
 	font-family "Cisco Sans"
+	@media only screen and (max-width 1199px)
+		background url("/images/Lobachevskiy-Kliffod/bg_1.png") right 330px no-repeat, url("/images/Lobachevskiy-Kliffod/bg_2.png") left 1720px no-repeat, #d6d2cd
+		background-size 16%, 20%, auto
 	&__nav-link
 		position fixed
 		right 36px
 		top 36px
 		display flex
 		align-items center
+		z-index 10
 		&_text
 			margin-right 16px
 			font-size 1rem
@@ -88,7 +92,7 @@ html
 				width 1px
 				height 14px
 	&__title
-		margin-bottom 92px
+		margin-bottom 105px
 		font-size 5rem
 		line-height 1
 		font-family "Helios"
@@ -96,15 +100,20 @@ html
 
 .events
 	position relative
-	padding-bottom 145px
+	padding-bottom 90px
 	&::before
 		position absolute
 		top 46px
-		left 123px
+		left 137px
 		content ""
 		width 1px
 		height calc(100% - 840px)
 		background rgba(0,0,0,.1)
-
-
-
+		@media only screen and (max-width 1199px)
+			left 11vw
+		@media only screen and (max-width 1145px)
+			left 9vw
+		@media only screen and (max-width 1095px)
+			left 7vw
+		@media only screen and (max-width 1045px)
+			left 63px

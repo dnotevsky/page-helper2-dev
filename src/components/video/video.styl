@@ -1,32 +1,33 @@
 .video
 	position relative
-	margin 0 auto 64px
+	margin 0 auto 59px
 	width 770px
-	padding-top 28px
+	padding-top 25px
 	background #FFFFFF
 	border-radius 4px
 	box-shadow 0 4px 6px rgba(0, 0, 0, 0.05)
 	&::before
 		position absolute
-		left -92px
-		top 0
+		left -102px
+		top -13px
 		content ""
 		width 52px
 		height 48px
 		border 10px solid #D6D2CD
+		border-top-width 3px
 		background url("/images/video.png") center center no-repeat, #D6D2CD
 	&__category
 		display inline-block
 		margin-bottom 6px
-		padding-left 36px
-		letter-spacing 2px
+		padding-left 30px
+		letter-spacing 3px
 		font-size .75rem
 		color rgba(0,0,0,.6)
 		line-height 1.33
 		text-transform uppercase
 	&__title
 		margin-bottom 24px
-		padding-left 36px
+		padding-left 27px
 		font-size 1.5rem
 		line-height 1.33
 		font-weight normal
@@ -82,6 +83,7 @@
 			left 50%
 			top 50%
 			transform translate(-50%, -50%)
+			margin-top -30px
 			width 73px
 			height 50px
 			background url("/images/youtube-play.svg") center center no-repeat
@@ -89,7 +91,7 @@
 		display flex
 		justify-content space-between
 		align-items center
-		padding 16px 36px
+		padding 17px 30px
 		&-share
 			color rgba(0, 0, 0, 0.6)
 			font-size 1rem
@@ -110,13 +112,12 @@
 			text-decoration none
 			line-height 1.5
 			&::before
-				margin-right 17px
+				margin-right 10px
 				content ""
 				position relative
 				display inline-block
 				width 10px
 				height 10px
-				top -1px
 				background url("/images/video-sprite.png") -46px -10px no-repeat
 					
 
