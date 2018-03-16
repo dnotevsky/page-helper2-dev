@@ -363,6 +363,114 @@ module.exports = {
     new CopyPlugin([{
       from: path.resolve(__dirname, './src/components/nav_2/nav_2.styl'),
       to: path.resolve(__dirname, "./dist/components/nav_2/style.styl")
+    }]),
+
+    // for event_9
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_9/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_9/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_9/event_9.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_9/style.styl")
+    }]),
+
+    // for video_5
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/video_5/component.html"),
+      template: path.resolve(__dirname, "./src/components/video_5/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/video_5/video_5.styl'),
+      to: path.resolve(__dirname, "./dist/components/video_5/style.styl")
+    }]),
+
+    // for event_10
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_10/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_10/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_10/event_10.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_10/style.styl")
+    }]),
+
+    // for event_11
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_11/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_11/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_11/event_11.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_11/style.styl")
+    }]),
+
+    // for event_12
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_12/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_12/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_12/event_12.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_12/style.styl")
+    }]),
+
+    // for event_13
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_13/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_13/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_13/event_13.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_13/style.styl")
+    }]),
+
+    // for quote_4
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/quote_4/component.html"),
+      template: path.resolve(__dirname, "./src/components/quote_4/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/quote_4/quote_4.styl'),
+      to: path.resolve(__dirname, "./dist/components/quote_4/style.styl")
+    }]),
+
+    // for event_14
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_14/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_14/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_14/event_14.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_14/style.styl")
+    }]),
+
+    // for event_15
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_15/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_15/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_15/event_15.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_15/style.styl")
     }])
   ]
 };
