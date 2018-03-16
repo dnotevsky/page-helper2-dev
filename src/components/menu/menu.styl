@@ -5,6 +5,7 @@
 	background url("/images/menu_bg.png") center center no-repeat
 	background-size cover
 	color #fff
+	font-family "Cisco Sans"
 	&__header
 		display flex
 		justify-content space-between
@@ -38,6 +39,9 @@
 			height 40px
 			border-radius 50%
 			background #fff
+			transition .5s ease-in-out all
+			&:hover
+				opacity .7
 			&::before,
 			&::after
 				display inline-block
@@ -59,94 +63,81 @@
 		margin-top 70px
 		padding-left 36px
 	&__left
+		margin-top -41px
 		width 370px
 		margin-right 161px
 	&__description
-		margin-bottom 39px
+		margin-bottom 62px
 		font-size 1.25rem
 		line-height 1.5
 		color rgba(255,255,255,.6)
 		&_cursive
+			font-family "SangBleu Sunrise"
 			font-style italic
 	&__partner
-		margin-top 39px
-		position relative
-		&::after
-			content ""
-			width 100%
-			height 1px
-			background rgba(255,255,255,.28)
-			position absolute
-			left 0
-			display inline-block
-			top 40px
+		font-family "Cisco Sans"
 		& > a
-			position relative
 			display inline-block
-			padding-left 23px
+			position relative
 			font-size 1rem
 			line-height 1.5
 			color rgba(255,255,255,.6)
+			transition .5s ease-in-out all
+			&:hover
+				color #fff
 			&:first-child
-				margin-bottom 33px
-			&::before
-				width 14px
-				height 12px
+				margin-bottom 8px
+			&::after
 				content ""
-				position absolute
-				left 0
-				top 5px
+				width 14px
+				height 14px
 				display inline-block
-				background url("/images/start-slide-sprite.png") -92px -10px no-repeat
+				top 1px
+				margin-left 9px
+				position relative
+				background url("/images/main-sprite.png") -92px -10px no-repeat
+				transform rotate(136deg)				
 	&__right
-		margin-top -100px
-	&__title
-		margin-bottom 62px
-		font-size 1.5rem
-		font-weight bold
-		color rgba(255,255,255,.5)
-	&__list
-		counter-reset olCounter
-		margin-left -40px
+		margin-top -32px
 	&__li
 		position relative
-		padding-left 40px
 		color #fff
+		font-family "Helios"
+		font-weight 900
 		font-size 1.5rem
+		line-height 1.25
+		transition .5s ease-in-out all
 		&_active
 			color #E34F2D
-		&::before
-			position absolute
-			left 0
-			top 0
-			content counter(olCounter)
-			counter-increment olCounter
+		&:hover
+			color #E34F2D
 	&__link
 		margin-bottom 32px
 		display inline-block
-	&__meanwhile
-		margin-bottom 32px
-		max-width 305px
-		&_text
-			display block
-			margin-bottom -5px
-			text-transform uppercase
-			font-size .75rem
-			line-height 1.75
-			color rgba(255,255,255,.6)
-			letter-spacing 2px
-		&_link
-			color #fff
-			font-weight bold
-			font-size 1.25rem
-			line-height 1.2
+		&-date
+			position absolute
+			display inline-block
+			left -24px
+			top 0
+			transform translate(-100%)
+			color rgba(255,255,255,.5)
+	&__category
+		display block
+		margin-bottom -3px
+		color #E34F2D
+		font-size .7rem
+		line-height 1.75
+		font-weight 900
+		font-family "Cisco Sans"
+		letter-spacing 3px
+		text-transform uppercase
 	&__share
 		position absolute
 		left 36px
-		bottom 36px
+		bottom 55px
 		&-text
 			display block
-			margin-bottom 8px
+			margin-bottom 11px
 			font-size 1.25rem
 			color rgba(255,255,255,.6)
 		&-links
@@ -160,6 +151,7 @@
 				border-radius 9px
 				position relative
 				display block
+				transition .5s ease-in-out all
 				&::after
 					display inline-block
 					content ""
@@ -167,28 +159,36 @@
 					top 50%
 					left 50%
 					transform translate(-50%, -50%)
-					background-image url("/images/start-slide-sprite.png")
+					background-image url("/images/main-sprite.png")
 					background-repeat no-repeat
 			&_vk
 				background #517398
+				&:hover
+					background alpha(#517398, .7)
 				&::after
 					width 22px
 					height 14px
 					background-position -50px -10px
 			&_fb
 				background #4469B0
+				&:hover
+					background alpha(#4469B0, .7)
 				&::after
 					width 14px
 					height 24px
 					background-position -10px -48px
 			&_ok
 				background #EC8225
+				&:hover
+					background alpha(#EC8225, .7)
 				&::after
 					width 14px
 					height 20px
 					background-position -50px -44px
 			&_tw
 				background #2AA3EF
+				&:hover
+					background alpha(#2AA3EF, .7)
 				&::after
 					width 20px
 					height 18px

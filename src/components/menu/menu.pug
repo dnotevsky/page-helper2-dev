@@ -11,34 +11,43 @@ mixin menu
                 p.menu__description 150 лет российской науки в Великобритании и британской науки в России 
                     span.menu__description_cursive Проект об отношениях российской и британской науки через встречи ученых
                 div.menu__partner
-                    a.menu__partner_postnauka(href="#") Перейти на postnauka.ru
-                    a.menu__partner_bc(href="#") Перейти на britishcouncil.ru
+                    a.menu__partner_postnauka(href="#") postnauka.ru
+                    <br/>
+                    a.menu__partner_bc(href="#") britishcouncil.ru
             div.menu__right
-                h2.menu__title Все встречи
                 ol.menu__list
                     li.menu__li.menu__li_active
-                        a.menu__link(href="#") Дарвин и Тимирязев
-                        div.menu__meanwhile
-                            span.menu__meanwhile_text Тем временем
-                            a.menu__meanwhile_link(href="#") Менделеев
+                        a.menu__link(href="#")
+                            span.menu__link-date 1829
+                            span.menu__link-text Лобачевский и Клиффорд
                     li.menu__li
-                        a.menu__link(href="#") Лобачевский и Клиффорд
-                        div.menu__meanwhile
-                            span.menu__meanwhile_text Тем временем
-                            a.menu__meanwhile_link(href="#") Кропоткин
+                        a.menu__link(href="#")
+                            span.menu__link-date 1859
+                            span.menu__link-text Дарвин и Тимирязев
                     li.menu__li
-                        a.menu__link(href="#") Виноградов и Мейтленд
+                        a.menu__link(href="#")
+                            span.menu__link-date 1884
+                            span.menu__link-text Виноградов и Мейтленд
                     li.menu__li
-                        a.menu__link(href="#") Вавилов и Бэтсон
+                        a.menu__link(href="#")
+                            span.menu__link-date 1913
+                            span.menu__link-text Вавилов и Бэтсон
                     li.menu__li
-                        a.menu__link(href="#") Курчатов и Кокрофт
+                        a.menu__link(href="#")
+                            span.menu__link-date 1921
+                            span.menu__link-text Капица и Резерфорд
                     li.menu__li
-                        a.menu__link(href="#") Капица и Резерфорд
-                        div.menu__meanwhile
-                            span.menu__meanwhile_text Тем временем
-                            a.menu__meanwhile_link(href="#") Российско-британское сотрудничество в Антарктиде
+                        a.menu__link(href="#")
+                            span.menu__link-date 1963
+                            span.menu__link-text Лурия и Сакс
                     li.menu__li
-                        a.menu__link(href="#") Лурия и Сакс
+                        span.menu__category Наше время<br/>
+                        a.menu__link(href="#")
+                            span.menu__link-text Сотрудничество в XXI веке
+                    li.menu__li
+                        span.menu__category Тест<br/>
+                        a.menu__link(href="#")
+                            span.menu__link-text А потом позвонил Крокодил:<br/>угадайте ученого<br/>по описанию коллеги
         div.menu__share
             span.menu__share-text Расскажите друзьям
             div.menu__share-links
