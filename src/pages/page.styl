@@ -55,6 +55,9 @@ html
 		@media only screen and (max-width 1199px)
 			background url("/images/Darvin-Timiryazev/bg_1.png") left 230px no-repeat, url("/images/Darvin-Timiryazev/bg_2.png") right 2175px no-repeat, url("/images/Darvin-Timiryazev/bg_3.png") left 3576px no-repeat, #d6d2cd
 			background-size 16%, 20%, auto
+		.events
+			&::before
+				height calc(100% - 540px)
 	&_3
 		background url("/images/Vinogradov-Meytlend/bg_1.png") right 316px no-repeat, url("/images/Vinogradov-Meytlend/bg_2.png") left 1417px no-repeat, url("/images/Vinogradov-Meytlend/bg_3.png") right 3100px no-repeat, #d6d2cd
 		background-size 16%, 12%, 43%, auto
@@ -63,7 +66,7 @@ html
 			background-size 15%, 12%, 43%, auto
 		.events
 			&::before
-				height calc(100% - 540px)
+				height calc(100% - 340px)
 	&__nav-link
 		position fixed
 		right 36px
