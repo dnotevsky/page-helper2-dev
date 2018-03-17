@@ -60,7 +60,31 @@ module.exports = {
   plugins: [
     new HTMLPlugin({
       filename: path.resolve(__dirname, "./dist/index.html"),
-      template: path.resolve(__dirname, "./src/pages/page.pug"),
+      template: path.resolve(__dirname, "./src/pages/index.pug"),
+      hash: true
+    }),
+    // http://0.0.0.0:8007/page1.html
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/page1.html"),
+      template: path.resolve(__dirname, "./src/pages/page1.pug"),
+      hash: true
+    }),
+    // http://0.0.0.0:8007/page2.html
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/page2.html"),
+      template: path.resolve(__dirname, "./src/pages/page2.pug"),
+      hash: true
+    }),
+    // http://0.0.0.0:8007/page3.html
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/page3.html"),
+      template: path.resolve(__dirname, "./src/pages/page3.pug"),
+      hash: true
+    }),
+    // http://0.0.0.0:8007/page4.html
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/page4.html"),
+      template: path.resolve(__dirname, "./src/pages/page4.pug"),
       hash: true
     }),
     new ExtractTextPlugin({

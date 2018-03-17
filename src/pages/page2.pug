@@ -1,0 +1,36 @@
+include ./../components/index.pug
+
+doctype html
+html.ua(lang="ru")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+  body
+    +header
+    +menu
+    //- Страница 2
+    div.wrapper
+      div.content.content_2
+        a.content__nav-link(href="#")
+          span.content__nav-link_text Все<br/>встречи
+          span.content__nav-link_circle
+        div.container.content__container
+          h1.content__title Дарвин и<br/>Тимирязев
+          div.events
+            +event_3
+            +video_3
+            +event_4
+            +quote_1
+            +event_5
+            +quote_2
+            +video_4
+            +event_6
+            +quote_3
+            +event_7
+            +event_8
+      +fact_2
+      +nav_2
+
+    +footer
