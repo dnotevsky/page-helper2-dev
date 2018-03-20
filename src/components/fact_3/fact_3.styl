@@ -1,16 +1,49 @@
 .fact
   position relative
   height 100vh
-  min-height 650px
   padding 53px 0
   color #fff
   font-family "Cisco Sans", sans-serif
+  @media only screen and (max-width 1023px)
+    padding-bottom 35px
+  @media only screen and (max-width 767px)
+    height auto
+    max-height auto !important
+  &_1
+    @media only screen and (max-width 1250px)
+      background url('/images/Lobachevskiy-Kliffod/fact-bg_1.png') left 520px no-repeat, url('/images/Lobachevskiy-Kliffod/fact-bg_2.png') right 200px no-repeat, #1b1a1a !important
+      background-size 14%, 17%, auto !important
+    @media only screen and (max-width 1023px)
+      min-height 600px
+    @media only screen and (max-width 767px)
+      background-position left 110%, right 20% !important
+  &_2
+    min-height 880px
+    @media only screen and (max-width 1023px)
+      min-height 890px
+      background-size 20% !important
+    @media only screen and (max-width 767px)
+      background-position left 110%
+    .fact__text
+      font-size 1.125rem
+  &_3
+    min-height 1100px
+    @media only screen and (max-width 1023px)
+      min-height 920px
+  &_4
+    min-height 1160px
+    @media only screen and (max-width 1023px)
+      min-height 980px
   &__nav-link
     position absolute
     top 36px
     right 36px
     display flex
     align-items center
+    @media only screen and (max-width 1023px)
+      right 20px
+    @media only screen and (max-width 767px)
+      top 20px
     &_circle
       display block
       position relative
@@ -19,6 +52,9 @@
       border-radius 50%
       background #fff
       transition .5s ease-in-out all
+      @media only screen and (max-width 1023px)
+        width 30px
+        height 30px
       &:hover
         opacity .7
       &::before,
@@ -42,6 +78,8 @@
     font-weight 900
     font-size 2.5rem
     line-height 1
+    @media only screen and (max-width 425px)
+      font-size 1.9rem
   &__container
     height 100%
   &__wrap
@@ -53,7 +91,7 @@
     position relative
     width 770px
     @media only screen and (max-width 1023px)
-      width 600px
+      width 560px
   &__date
     position absolute
     top 0
@@ -67,12 +105,18 @@
     text-align right
     @media only screen and (max-width 1199px)
       left -13px
+    @media only screen and (max-width 1023px)
+      font-size 1.2rem
+    @media only screen and (max-width 767px)
+      position static
   &__title
     margin-bottom 23px
     font-weight normal
     font-size 1.5rem
     line-height 1.5
     font-family "Helios"
+    @media only screen and (max-width 1023px)
+      font-size 1.3rem
   &__img
     margin-bottom 9px
     display flex
@@ -82,9 +126,16 @@
     border-radius 4px
     background #fff
     box-shadow 0 2px 3px rgba(0,0,0,0.1)
+    @media only screen and (max-width 1023px)
+      height 260px
+      img
+        max-width 100%
+        max-height 100%
   &__text
     font-size 1.5rem
     line-height 1.5
+    @media only screen and (max-width 1023px)
+      font-size 1.2rem
     &_cursive
       font-family "SangBleu Sunrise"
       font-style italic
@@ -98,6 +149,12 @@
     background #FFFFFF
     border-radius 4px
     box-shadow 0 2px 3px rgba(0,0,0,0.1)
+    @media only screen and (max-width 1023px)
+      margin-top 20px
+      width 600px
+    @media only screen and (max-width 767px)
+      width 100%
+      padding-top 15px
     &__category
       display inline-block
       margin-bottom 6px
@@ -107,6 +164,12 @@
       color rgba(0,0,0,.6)
       line-height 1.33
       text-transform uppercase
+      @media only screen and (max-width 767px)
+        padding-left 20px
+        font-size .65rem
+        margin-bottom 5px
+      @media only screen and (max-width 425px)
+        font-size .6rem
     &__title
       margin-bottom 24px
       padding-left 27px
@@ -114,6 +177,15 @@
       line-height 1.33
       font-weight normal
       color #000
+      @media only screen and (max-width 1023px)
+        margin-bottom 5px
+        padding-right 20px
+      @media only screen and (max-width 767px)
+        padding-left 20px
+        margin-bottom 10px
+        font-size 1.3rem
+      @media only screen and (max-width 425px)
+        font-size 1.1rem
       &_author
         color rgba(0,0,0,.6)
     &__iframe
@@ -123,6 +195,14 @@
       background-size 100%
       background-position center center
       background-repeat no-repeat
+      @media only screen and (max-width 1023px)
+        height 0
+        padding-bottom 56.25%
+      @media only screen and (max-width 767px)
+        padding 15px
+        height 0
+        padding-top 0
+        padding-bottom 56.25%
       &-logos
         position relative
         width 310px
@@ -130,6 +210,11 @@
         display flex
         justify-content space-between
         align-items center
+        @media only screen and (max-width 767px)
+          width 150px
+          height 45px
+          margin-top 5px
+          padding-top 15px
         &::after
           content ""
           width 1px
@@ -138,15 +223,30 @@
           top 0
           left 101px
           background rgba(255,255,255,.5)
+          @media only screen and (max-width 767px)
+            height 30px
+            left 38px
+            top 15px
         &_postnauka
           height 65px
+          @media only screen and (max-width 767px)
+            height 30px
         &_bc
           height 51px
+          @media only screen and (max-width 767px)
+            height 30px
       &-text
         height calc(100% - 65px)
         display flex
         flex-direction column
         justify-content flex-end
+        @media only screen and (max-width 1023px)
+          position absolute
+          height: calc(100% - 150px);
+        @media only screen and (max-width 767px)
+          position absolute
+          padding-bottom 5px
+          height calc(100% - 50px)
       &-title
         margin-bottom 16px
         font-size 2.5rem
@@ -154,12 +254,17 @@
         color #fff
         font-family "Druk Text Wide"
         font-weight 900
+        @media only screen and (max-width 767px)
+          font-size 1.2rem
+          margin-bottom 5px
       &-author
         font-size 2.5rem
         line-height 1
         color #fff
         font-style italic
         font-family "SangBleu Sunrise"
+        @media only screen and (max-width 767px)
+          font-size 1rem
       &-btn
         display block
         position absolute
@@ -170,16 +275,28 @@
         width 73px
         height 50px
         background url("/images/youtube-play.svg") center center no-repeat
+        @media only screen and (max-width 767px)
+          width 50px
+          height 30px
+          background-size 100%
+          margin-top 0
     &__bottom
       display flex
       justify-content space-between
       align-items center
       padding 17px 30px
+      @media only screen and (max-width 1023px)
+        padding-top 0
+      @media only screen and (max-width 767px)
+        padding 10px 20px
+        flex-wrap wrap
       &-share
         color rgba(0, 0, 0, 0.6)
         font-size 1rem
         text-decoration none
         line-height 1.5
+        @media only screen and (max-width 767px)
+          margin-bottom 8px
         &::before
           margin-right 8px
           content ""
