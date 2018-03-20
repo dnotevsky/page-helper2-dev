@@ -9,6 +9,10 @@
   font-family "Cisco Sans", sans-serif
   @media only screen and (max-width 1023px)
     width 600px
+  @media only screen and (max-width 767px)
+    width 100%
+    margin-top 70px
+    padding 24px 20px 28px
   &::before
     position absolute
     left -91px
@@ -21,6 +25,13 @@
     background url("/images/quote.png") center center no-repeat, #D6D2CD
     @media only screen and (max-width 1199px)
       left -7vw
+    @media only screen and (max-width 767px)
+      left 10px
+      position absolute
+      display inline-block
+      border-top-width 10px
+      top -50px
+      border-bottom-width 3px
   &__author
     margin-bottom 20px
     height 40px
@@ -40,14 +51,20 @@
     margin-bottom 9px
     font-size 1.25rem
     line-height 1.6
+    @media only screen and (max-width 767px)
+      font-size 1rem
     &_big
       margin-top -13px
       margin-bottom 6px
       font-size 1.5rem
       line-height 1.5
       font-family "Helios"
+      @media only screen and (max-width 767px)
+        font-size 1.25rem
   &__cite
     color rgba(0,0,0,.6)
     font-size 1rem
     line-height 1.5
     font-family "Helios"
+    @media only screen and (max-width 767px)
+      font-size .9rem
