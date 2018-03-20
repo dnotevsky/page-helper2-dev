@@ -8,6 +8,10 @@
   box-shadow 0 2px 3px rgba(0,0,0,0.1)
   @media only screen and (max-width 1023px)
     width 600px
+  @media only screen and (max-width 767px)
+    width 100%
+    margin-top 120px
+    padding 20px 25px
   &::before
     position absolute
     left -102px
@@ -23,6 +27,10 @@
     @media only screen and (max-width 1023px)
       left -65px
       border-right-width 0
+    @media only screen and (max-width 767px)
+      left 0
+      top -55px
+      border-bottom-width 0
   &__category
     display inline-block
     margin-bottom 12px
@@ -36,22 +44,36 @@
     font-size 2.25rem
     line-height 1.16
     font-weight bold
+    @media only screen and (max-width 767px)
+      font-size 1.8rem
+      margin-bottom 7px
+    @media only screen and (max-width 425px)
+      font-size 1.4rem
     &_author
       display inline-block
       margin-left 10px
       font-weight normal
       color rgba(0,0,0,.5)
+      @media only screen and (max-width 767px)
+        margin-left 0
   &__description
     margin-bottom 31px
     font-family "Helios"
     color rgba(0,0,0,.6)
     font-size 1.5rem
     line-height 1.5
+    @media only screen and (max-width 767px)
+      font-size 1.2rem
+      margin-bottom 25px
+    @media only screen and (max-width 425px)
+      font-size 1rem
   &__read
     position relative
     color #E34F2D
     font-size 1rem
     line-height 1.25
+    @media only screen and (max-width 767px)
+      font-size .9rem
     &-text
       font-weight bold
     &-time
