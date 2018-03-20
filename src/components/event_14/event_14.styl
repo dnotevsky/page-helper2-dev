@@ -1,48 +1,74 @@
 .event
-	position relative
-	margin 0 auto 63px
-	width 770px
-	&__date
-		position absolute
-		top 0
-		left -48px
-		transform translate(-100%)
-		font-size 1.5rem
-		line-height 1.5
-		font-family "Helios"
-		font-weight 900
-		color rgba(0,0,0,.5)
-		background #D6D2CD
-		padding-bottom 5px
-		@media only screen and (max-width 1199px)
-			left -30px
-	&__title
-		margin-bottom 23px
-		font-weight normal
-		font-size 1.5rem
-		line-height 1.5
-		font-family "Helios"
-	&__img
-		display flex
-		justify-content center
-		align-items center
-		margin-bottom 12px
-		height 344px
-		border-radius 4px
-		box-shadow 0 2px 3px rgba(0,0,0,0.1)
-		background #fff
-		background-repeat no-repeat
-		background-position right top
-	&__text
-		font-size 1.125rem
-		line-height 1.5
-		&_big
-			font-family "Helios"
-			font-size 1.5rem !important
-		&_medium
-			font-size 1.25rem !important
-		&_cursive
-			font-family "SangBleu Sunrise"
-			font-style italic
-		p
-			margin-bottom 7px
+  position relative
+  margin 0 auto 63px
+  width 770px
+  @media only screen and (max-width 1023px)
+    width 600px
+  @media only screen and (max-width 767px)
+    width 100%
+    margin-right 0
+    background #d6d2cd
+    padding 10px 0
+  &__date
+    position absolute
+    top 0
+    left -48px
+    transform translate(-100%)
+    font-size 1.5rem
+    line-height 1.5
+    font-family "Helios"
+    font-weight 900
+    color rgba(0,0,0,.5)
+    background #D6D2CD
+    padding-bottom 5px
+    @media only screen and (max-width 1199px)
+      left -30px
+    @media only screen and (max-width 1023px)
+      left -10px
+      top 2px
+      font-size 1.2rem
+    @media only screen and (max-width 767px)
+      position static
+      font-size 1.3rem
+  &__title
+    margin-bottom 23px
+    font-weight normal
+    font-size 1.5rem
+    line-height 1.5
+    font-family "Helios"
+    @media only screen and (max-width 1023px)
+      font-size 1.3rem
+    @media only screen and (max-width 767px)
+      font-size 1.2rem
+  &__img
+    display flex
+    justify-content center
+    align-items center
+    margin-bottom 12px
+    height 344px
+    border-radius 4px
+    box-shadow 0 2px 3px rgba(0,0,0,0.1)
+    background #fff
+    background-repeat no-repeat
+    background-position right top
+    img
+      max-width 90%
+  &__text
+    font-size 1.125rem
+    line-height 1.5
+    @media only screen and (max-width 1023px)
+      font-size 1rem
+    &_big
+      font-family "Helios"
+      font-size 1.5rem !important
+      @media only screen and (max-width 767px)
+        font-size 1.4rem !important
+    &_medium
+      font-size 1.25rem !important
+      @media only screen and (max-width 767px)
+        font-size 1.2rem !important
+    &_cursive
+      font-family "SangBleu Sunrise"
+      font-style italic
+    p
+      margin-bottom 7px

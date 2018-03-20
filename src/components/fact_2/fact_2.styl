@@ -1,208 +1,210 @@
 .fact
-	position relative
-	height 100vh
-	min-height 650px
-	padding 53px 0
-	color #fff
-	font-family "Cisco Sans", sans-serif
-	&_2
-		min-height 880px
-		.fact__text
-			font-size 1.125rem
-		@media only screen and (max-width 1250px)
-			/**/
-	&__nav-link
-		position absolute
-		top 36px
-		right 36px
-		display flex
-		align-items center
-		&_circle
-			display block
-			position relative
-			width 40px
-			height 40px
-			border-radius 50%
-			background #fff
-			transition .5s ease-in-out all
-			&:hover
-				opacity .7
-			&::before,
-			&::after
-				display inline-block
-				position absolute
-				top 50%
-				left 50%
-				transform translate(-50%, -50%)
-				content ""
-				background #000
-			&::before
-				width 14px
-				height 1px
-			&::after
-				width 1px
-				height 14px
-	&__h2
-		margin-bottom 24px
-		font-family "Helios"
-		font-weight 900
-		font-size 2.5rem
-		line-height 1
-	&__container
-		height 100%
-	&__wrap
-		height calc(100% - 130px)
-		display flex
-		justify-content center
-		align-items center
-	&__block
-		position relative
-		width 770px
-	&__date
-		position absolute
-		top 0
-		left -30px
-		transform translate(-100%)
-		font-size 1.5rem
-		line-height 1.5
-		font-family "Helios"
-		font-weight 900
-		color rgba(255,255,255,.5)
-		text-align right
-		@media only screen and (max-width 1199px)
-			left -13px
-	&__title
-		margin-bottom 23px
-		font-weight normal
-		font-size 1.5rem
-		line-height 1.5
-		font-family "Helios"
-	&__img
-		margin-bottom 9px
-		display flex
-		justify-content center
-		align-items center
-		height 339px
-		border-radius 4px
-		background #fff
-		box-shadow 0 2px 3px rgba(0,0,0,0.1)
-	&__text
-		font-size 1.5rem
-		line-height 1.5
-		&_cursive
-			font-family "SangBleu Sunrise"
-			font-style italic
-		p
-			margin-bottom 12px
-	&-video
-		position relative
-		margin 48px auto 0
-		width 770px
-		padding-top 25px
-		background #FFFFFF
-		border-radius 4px
-		box-shadow 0 2px 3px rgba(0,0,0,0.1)
-		&__category
-			display inline-block
-			margin-bottom 6px
-			padding-left 30px
-			letter-spacing 3px
-			font-size .75rem
-			color rgba(0,0,0,.6)
-			line-height 1.33
-			text-transform uppercase
-		&__title
-			margin-bottom 24px
-			padding-left 27px
-			font-size 1.5rem
-			line-height 1.33
-			font-weight normal
-			color #000
-			&_author
-				color rgba(0,0,0,.6)
-		&__iframe
-			position relative
-			height 434px
-			padding 36px 36px 40px
-			background-size 100%
-			background-position center center
-			background-repeat no-repeat
-			&-logos
-				position relative
-				width 310px
-				height 65px
-				display flex
-				justify-content space-between
-				align-items center
-				&::after
-					content ""
-					width 1px
-					height 65px
-					position absolute
-					top 0
-					left 101px
-					background rgba(255,255,255,.5)
-				&_postnauka
-					height 65px
-				&_bc
-					height 51px
-			&-text
-				height calc(100% - 65px)
-				display flex
-				flex-direction column
-				justify-content flex-end
-			&-title
-				margin-bottom 16px
-				font-size 2.5rem
-				line-height 1
-				color #fff
-				font-family "Druk Text Wide"
-				font-weight 900
-			&-author
-				font-size 2.5rem
-				line-height 1
-				color #fff
-				font-style italic
-				font-family "SangBleu Sunrise"
-			&-btn
-				display block
-				position absolute
-				left 50%
-				top 50%
-				transform translate(-50%, -50%)
-				margin-top -30px
-				width 73px
-				height 50px
-				background url("/images/youtube-play.svg") center center no-repeat
-		&__bottom
-			display flex
-			justify-content space-between
-			align-items center
-			padding 17px 30px
-			&-share
-				color rgba(0, 0, 0, 0.6)
-				font-size 1rem
-				text-decoration none
-				line-height 1.5
-				&::before
-					margin-right 8px
-					content ""
-					position relative
-					display inline-block
-					width 16px
-					height 14px
-					top 1px
-					background url("/images/video-sprite.png") -10px -10px no-repeat
-			&-text
-				color rgba(0, 0, 0, 0.6)
-				font-size 1rem
-				text-decoration none
-				line-height 1.5
-				&::before
-					margin-right 10px
-					content ""
-					position relative
-					display inline-block
-					width 10px
-					height 10px
-					background url("/images/video-sprite.png") -46px -10px no-repeat
+  position relative
+  height 100vh
+  min-height 650px
+  padding 53px 0
+  color #fff
+  font-family "Cisco Sans", sans-serif
+  &_2
+    min-height 880px
+    .fact__text
+      font-size 1.125rem
+    @media only screen and (max-width 1250px)
+      /**/
+  &__nav-link
+    position absolute
+    top 36px
+    right 36px
+    display flex
+    align-items center
+    &_circle
+      display block
+      position relative
+      width 40px
+      height 40px
+      border-radius 50%
+      background #fff
+      transition .5s ease-in-out all
+      &:hover
+        opacity .7
+      &::before,
+      &::after
+        display inline-block
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        content ""
+        background #000
+      &::before
+        width 14px
+        height 1px
+      &::after
+        width 1px
+        height 14px
+  &__h2
+    margin-bottom 24px
+    font-family "Helios"
+    font-weight 900
+    font-size 2.5rem
+    line-height 1
+  &__container
+    height 100%
+  &__wrap
+    height calc(100% - 130px)
+    display flex
+    justify-content center
+    align-items center
+  &__block
+    position relative
+    width 770px
+    @media only screen and (max-width 1023px)
+      width 600px
+  &__date
+    position absolute
+    top 0
+    left -30px
+    transform translate(-100%)
+    font-size 1.5rem
+    line-height 1.5
+    font-family "Helios"
+    font-weight 900
+    color rgba(255,255,255,.5)
+    text-align right
+    @media only screen and (max-width 1199px)
+      left -13px
+  &__title
+    margin-bottom 23px
+    font-weight normal
+    font-size 1.5rem
+    line-height 1.5
+    font-family "Helios"
+  &__img
+    margin-bottom 9px
+    display flex
+    justify-content center
+    align-items center
+    height 339px
+    border-radius 4px
+    background #fff
+    box-shadow 0 2px 3px rgba(0,0,0,0.1)
+  &__text
+    font-size 1.5rem
+    line-height 1.5
+    &_cursive
+      font-family "SangBleu Sunrise"
+      font-style italic
+    p
+      margin-bottom 12px
+  &-video
+    position relative
+    margin 48px auto 0
+    width 770px
+    padding-top 25px
+    background #FFFFFF
+    border-radius 4px
+    box-shadow 0 2px 3px rgba(0,0,0,0.1)
+    &__category
+      display inline-block
+      margin-bottom 6px
+      padding-left 30px
+      letter-spacing 3px
+      font-size .75rem
+      color rgba(0,0,0,.6)
+      line-height 1.33
+      text-transform uppercase
+    &__title
+      margin-bottom 24px
+      padding-left 27px
+      font-size 1.5rem
+      line-height 1.33
+      font-weight normal
+      color #000
+      &_author
+        color rgba(0,0,0,.6)
+    &__iframe
+      position relative
+      height 434px
+      padding 36px 36px 40px
+      background-size 100%
+      background-position center center
+      background-repeat no-repeat
+      &-logos
+        position relative
+        width 310px
+        height 65px
+        display flex
+        justify-content space-between
+        align-items center
+        &::after
+          content ""
+          width 1px
+          height 65px
+          position absolute
+          top 0
+          left 101px
+          background rgba(255,255,255,.5)
+        &_postnauka
+          height 65px
+        &_bc
+          height 51px
+      &-text
+        height calc(100% - 65px)
+        display flex
+        flex-direction column
+        justify-content flex-end
+      &-title
+        margin-bottom 16px
+        font-size 2.5rem
+        line-height 1
+        color #fff
+        font-family "Druk Text Wide"
+        font-weight 900
+      &-author
+        font-size 2.5rem
+        line-height 1
+        color #fff
+        font-style italic
+        font-family "SangBleu Sunrise"
+      &-btn
+        display block
+        position absolute
+        left 50%
+        top 50%
+        transform translate(-50%, -50%)
+        margin-top -30px
+        width 73px
+        height 50px
+        background url("/images/youtube-play.svg") center center no-repeat
+    &__bottom
+      display flex
+      justify-content space-between
+      align-items center
+      padding 17px 30px
+      &-share
+        color rgba(0, 0, 0, 0.6)
+        font-size 1rem
+        text-decoration none
+        line-height 1.5
+        &::before
+          margin-right 8px
+          content ""
+          position relative
+          display inline-block
+          width 16px
+          height 14px
+          top 1px
+          background url("/images/video-sprite.png") -10px -10px no-repeat
+      &-text
+        color rgba(0, 0, 0, 0.6)
+        font-size 1rem
+        text-decoration none
+        line-height 1.5
+        &::before
+          margin-right 10px
+          content ""
+          position relative
+          display inline-block
+          width 10px
+          height 10px
+          background url("/images/video-sprite.png") -46px -10px no-repeat

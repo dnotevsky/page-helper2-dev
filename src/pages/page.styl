@@ -1,146 +1,163 @@
 /*Reset стилей*/
 *
-	padding 0
-	margin 0
-	box-sizing border-box
-	
+  padding 0
+  margin 0
+  box-sizing border-box
+
 ul,
 ol
-	list-style none
-	
+  list-style none
+
 a
-	text-decoration none
-	color inherit
+  text-decoration none
+  color inherit
 
 button,
 input,
 textarea
-	border none
-	outline none
-	background transparent
-	
+  border none
+  outline none
+  background transparent
+
 /*Общие стили*/
 html
-	font-size 16px
-	line-height 1.25
-	
+  font-size 16px
+  line-height 1.25
+
 .wrapper
-	margin 0 auto
-	width 100%
-	max-width 1600px
-	
+  margin 0 auto
+  width 100%
+  max-width 1600px
+
 .container
-	width 100%
-	max-width 1210px
-	padding 0 20px
-	margin 0 auto
-	
+  width 100%
+  max-width 1210px
+  padding 0 20px
+  margin 0 auto
+
 .row
-	display flex
-	
+  display flex
+
 
 //Стили контента
 .content
-	padding 42px 0 0
-	background url("/images/Lobachevskiy-Kliffod/bg_1.png") right 330px no-repeat, url("/images/Lobachevskiy-Kliffod/bg_2.png") left 1420px no-repeat, #d6d2cd
-	background-size 16%, 20%, auto
-	color #000
-	font-family "Cisco Sans"
-	@media only screen and (max-width 1199px)
-		background url("/images/Lobachevskiy-Kliffod/bg_1.png") right 330px no-repeat, url("/images/Lobachevskiy-Kliffod/bg_2.png") left 1720px no-repeat, #d6d2cd
-		background-size 16%, 20%, auto
-	&_2
-		background url("/images/Darvin-Timiryazev/bg_1.png") left 130px no-repeat, url("/images/Darvin-Timiryazev/bg_2.png") right 2175px no-repeat, url("/images/Darvin-Timiryazev/bg_3.png") left 3676px no-repeat, #d6d2cd
-		background-size 20%, 15.5%, 14%, auto
-		@media only screen and (max-width 1199px)
-			background url("/images/Darvin-Timiryazev/bg_1.png") left 230px no-repeat, url("/images/Darvin-Timiryazev/bg_2.png") right 2175px no-repeat, url("/images/Darvin-Timiryazev/bg_3.png") left 3576px no-repeat, #d6d2cd
-			background-size 16%, 20%, auto
-		.events
-			&::before
-				height calc(100% - 540px)
-	&_3
-		background url("/images/Vinogradov-Meytlend/bg_1.png") right 316px no-repeat, url("/images/Vinogradov-Meytlend/bg_2.png") left 1417px no-repeat, url("/images/Vinogradov-Meytlend/bg_3.png") right 3100px no-repeat, #d6d2cd
-		background-size 16%, 12%, 43%, auto
-		@media only screen and (max-width 1199px)
-			background url(/images/Vinogradov-Meytlend/bg_1.png) right 316px no-repeat, url(/images/Vinogradov-Meytlend/bg_2.png) left 1217px no-repeat, url(/images/Vinogradov-Meytlend/bg_3.png) right 3100px no-repeat, #d6d2cd
-			background-size 15%, 12%, 43%, auto
-		.events
-			&::before
-				height calc(100% - 340px)
-	&_4
-		background url("/images/Vavilov-Batson/bg_1.png") left 477px no-repeat, url("/images/Vavilov-Batson/bg_2.png") right 1400px no-repeat, #d6d2cd
-		background-size 10%, 21%, auto
-		@media only screen and (max-width 1199px)
-			background url("/images/Vavilov-Batson/bg_1.png") left 377px no-repeat, url("/images/Vavilov-Batson/bg_2.png") right 1400px no-repeat, #d6d2cd
-			background-size 10%, 21%, auto
-		.events
-			&::before
-				height calc(100% - 320px)
-	&__nav-link
-		position fixed
-		right 36px
-		top 36px
-		display flex
-		align-items center
-		z-index 10
-		&_text
-			margin-right 16px
-			font-size 1rem
-			text-align right
-			color #000
-			opacity .6
-		&_circle
-			display block
-			position relative
-			width 40px
-			height 40px
-			border-radius 50%
-			background #EB663A
-			transition .5s ease-in-out all
-			&:hover
-				background #fff
-				&::before,
-				&::after
-					background #EB663A
-			&::before,
-			&::after
-				display inline-block
-				position absolute
-				top 50%
-				left 50%
-				transform translate(-50%, -50%)
-				content ""
-				background #fff
-				transition .5s ease-in-out all
-			&::before
-				width 14px
-				height 1px
-			&::after
-				width 1px
-				height 14px
-	&__title
-		margin-bottom 105px
-		font-size 5rem
-		line-height 1
-		font-family "Helios"
-		font-weight 900
+  padding 42px 0 0
+  background url("/images/Lobachevskiy-Kliffod/bg_1.png") right 330px no-repeat, url("/images/Lobachevskiy-Kliffod/bg_2.png") left 1420px no-repeat, #d6d2cd
+  background-size 16%, 20%, auto
+  color #000
+  font-family "Cisco Sans"
+  @media only screen and (max-width 1199px)
+    background url("/images/Lobachevskiy-Kliffod/bg_1.png") right 330px no-repeat, url("/images/Lobachevskiy-Kliffod/bg_2.png") left 1720px no-repeat, #d6d2cd
+    background-size 16%, 20%, auto
+  &_2
+    background url("/images/Darvin-Timiryazev/bg_1.png") left 130px no-repeat, url("/images/Darvin-Timiryazev/bg_2.png") right 2175px no-repeat, url("/images/Darvin-Timiryazev/bg_3.png") left 3676px no-repeat, #d6d2cd
+    background-size 20%, 15.5%, 14%, auto
+    @media only screen and (max-width 1199px)
+      background url("/images/Darvin-Timiryazev/bg_1.png") left 230px no-repeat, url("/images/Darvin-Timiryazev/bg_2.png") right 2175px no-repeat, url("/images/Darvin-Timiryazev/bg_3.png") left 3576px no-repeat, #d6d2cd
+      background-size 16%, 20%, auto
+    .events
+      &::before
+        height calc(100% - 540px)
+  &_3
+    background url("/images/Vinogradov-Meytlend/bg_1.png") right 316px no-repeat, url("/images/Vinogradov-Meytlend/bg_2.png") left 1417px no-repeat, url("/images/Vinogradov-Meytlend/bg_3.png") right 3100px no-repeat, #d6d2cd
+    background-size 16%, 12%, 43%, auto
+    @media only screen and (max-width 1199px)
+      background url(/images/Vinogradov-Meytlend/bg_1.png) right 316px no-repeat, url(/images/Vinogradov-Meytlend/bg_2.png) left 1217px no-repeat, url(/images/Vinogradov-Meytlend/bg_3.png) right 3100px no-repeat, #d6d2cd
+      background-size 15%, 12%, 43%, auto
+    .events
+      &::before
+        height calc(100% - 340px)
+  &_4
+    background url("/images/Vavilov-Batson/bg_1.png") left 477px no-repeat, url("/images/Vavilov-Batson/bg_2.png") right 1400px no-repeat, #d6d2cd
+    background-size 10%, 21%, auto
+    @media only screen and (max-width 1199px)
+      background url("/images/Vavilov-Batson/bg_1.png") left 377px no-repeat, url("/images/Vavilov-Batson/bg_2.png") right 1400px no-repeat, #d6d2cd
+      background-size 10%, 21%, auto
+    .events
+      &::before
+        height calc(100% - 320px)
+  &__nav-link
+    position fixed
+    right 36px
+    top 36px
+    display flex
+    align-items center
+    z-index 10
+    @media only screen and (max-width 1023px)
+      right 20px
+    &_text
+      margin-right 16px
+      font-size 1rem
+      text-align right
+      color #000
+      opacity .6
+      @media only screen and (max-width 1023px)
+        margin-right 12px
+        font-size .8rem
+    &_circle
+      display block
+      position relative
+      width 40px
+      height 40px
+      border-radius 50%
+      background #EB663A
+      transition .5s ease-in-out all
+      @media only screen and (max-width 1023px)
+        width 30px
+        height 30px
+      &:hover
+        background #fff
+        &::before,
+        &::after
+          background #EB663A
+      &::before,
+      &::after
+        display inline-block
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        content ""
+        background #fff
+        transition .5s ease-in-out all
+      &::before
+        width 14px
+        height 1px
+      &::after
+        width 1px
+        height 14px
+  &__title
+    margin-bottom 105px
+    font-size 5rem
+    line-height 1
+    font-family "Helios"
+    font-weight 900
+    @media only screen and (max-width 1023px)
+      margin-bottom 70px
+      font-size 3.5rem
 
 .events
-	position relative
-	padding-bottom 90px
-	&::before
-		position absolute
-		top 46px
-		left 137px
-		content ""
-		width 1px
-		height calc(100% - 840px)
-		background rgba(0,0,0,.1)
-		@media only screen and (max-width 1199px)
-			left 11vw
-		@media only screen and (max-width 1145px)
-			left 9vw
-		@media only screen and (max-width 1095px)
-			left 7vw
-		@media only screen and (max-width 1045px)
-			left 63px
+  position relative
+  padding-bottom 90px
+  @media only screen and (max-width 1023px)
+    max-width 728px
+    margin 0 auto
+  &::before
+    position absolute
+    top 46px
+    left 137px
+    content ""
+    width 1px
+    height calc(100% - 840px)
+    background rgba(0,0,0,.1)
+    @media only screen and (max-width 1199px)
+      left 11vw
+    @media only screen and (max-width 1145px)
+      left 9vw
+    @media only screen and (max-width 1095px)
+      left 7vw
+    @media only screen and (max-width 1045px)
+      left 63px
+    @media only screen and (max-width 1023px)
+      left 36px
+      top 10px

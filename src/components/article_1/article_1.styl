@@ -1,64 +1,66 @@
 .article
-	position relative
-	margin 0 auto 59px
-	width 770px
-	padding 28px 30px
-	background #FFFFFF
-	border-radius 4px
-	box-shadow 0 2px 3px rgba(0,0,0,0.1)
-	&::before
-		position absolute
-		left -102px
-		top -13px
-		content ""
-		width 52px
-		height 52px
-		border 10px solid #D6D2CD
-		border-top-width 3px
-		background url("/images/article.png") center center no-repeat, #D6D2CD
-		@media only screen and (max-width 1199px)
-			left -8vw
-	&__category
-		display inline-block
-		margin-bottom 12px
-		letter-spacing 3px
-		font-size .75rem
-		color rgba(0,0,0,.6)
-		line-height 1.33
-		text-transform uppercase
-	&__title
-		margin-bottom -1px
-		font-size 2.25rem
-		line-height 1.16
-		font-weight bold
-		&_author
-			display inline-block
-			margin-left 10px
-			font-weight normal
-			color rgba(0,0,0,.5)
-	&__description
-		margin-bottom 31px
-		font-family "Helios"
-		color rgba(0,0,0,.6)
-		font-size 1.5rem
-		line-height 1.5
-	&__read
-		position relative
-		color #E34F2D
-		font-size 1rem
-		line-height 1.25
-		&-text
-			font-weight bold
-		&-time
-			display inline-block
-			margin-left 4px
-		&::after
-			content ""
-			width 11px
-			height 14px
-			display inline-block
-			margin-left 10px
-			top 2px
-			position relative
-			background url("/images/main-sprite.png") -92px -41px no-repeat
-			transform rotate(-136deg)
+  position relative
+  margin 0 auto 59px
+  width 770px
+  padding 28px 30px
+  background #FFFFFF
+  border-radius 4px
+  box-shadow 0 2px 3px rgba(0,0,0,0.1)
+  @media only screen and (max-width 1023px)
+    width 600px
+  &::before
+    position absolute
+    left -102px
+    top -13px
+    content ""
+    width 52px
+    height 52px
+    border 10px solid #D6D2CD
+    border-top-width 3px
+    background url("/images/article.png") center center no-repeat, #D6D2CD
+    @media only screen and (max-width 1199px)
+      left -8vw
+  &__category
+    display inline-block
+    margin-bottom 12px
+    letter-spacing 3px
+    font-size .75rem
+    color rgba(0,0,0,.6)
+    line-height 1.33
+    text-transform uppercase
+  &__title
+    margin-bottom -1px
+    font-size 2.25rem
+    line-height 1.16
+    font-weight bold
+    &_author
+      display inline-block
+      margin-left 10px
+      font-weight normal
+      color rgba(0,0,0,.5)
+  &__description
+    margin-bottom 31px
+    font-family "Helios"
+    color rgba(0,0,0,.6)
+    font-size 1.5rem
+    line-height 1.5
+  &__read
+    position relative
+    color #E34F2D
+    font-size 1rem
+    line-height 1.25
+    &-text
+      font-weight bold
+    &-time
+      display inline-block
+      margin-left 4px
+    &::after
+      content ""
+      width 11px
+      height 14px
+      display inline-block
+      margin-left 10px
+      top 2px
+      position relative
+      background url("/images/main-sprite.png") -92px -41px no-repeat
+      transform rotate(-136deg)
