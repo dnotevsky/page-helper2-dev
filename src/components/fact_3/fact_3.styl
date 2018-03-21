@@ -7,9 +7,10 @@
   @media only screen and (max-width 1023px)
     padding-bottom 35px
   @media only screen and (max-width 767px)
-    height auto
-    max-height auto !important
+    height auto !important
+    min-height auto !important
   &_1
+    min-height 700px
     @media only screen and (max-width 1250px)
       background url('/images/Lobachevskiy-Kliffod/fact-bg_1.png') left 520px no-repeat, url('/images/Lobachevskiy-Kliffod/fact-bg_2.png') right 200px no-repeat, #1b1a1a !important
       background-size 14%, 17%, auto !important
@@ -17,6 +18,10 @@
       min-height 600px
     @media only screen and (max-width 767px)
       background-position left 110%, right 20% !important
+    @media only screen and (max-width 480px)
+      padding-bottom 311px
+      background url('/images/Lobachevskiy-Kliffod/fact-mob_bg.png') center bottom no-repeat, #1b1a1a !important
+      background-size 100% !important
   &_2
     min-height 880px
     @media only screen and (max-width 1023px)
@@ -34,6 +39,12 @@
     min-height 1160px
     @media only screen and (max-width 1023px)
       min-height 980px
+  &_5
+    min-height 1200px
+  &_6
+    min-height 980px
+  &_7
+    min-height 1050px
   &__nav-link
     position absolute
     top 36px
@@ -44,6 +55,8 @@
       right 20px
     @media only screen and (max-width 767px)
       top 13px
+    @media only screen and (max-width 480px)
+      display none
     &_circle
       display block
       position relative
@@ -78,8 +91,9 @@
     font-weight 900
     font-size 2.5rem
     line-height 1
-    @media only screen and (max-width 425px)
-      font-size 1.9rem
+    @media only screen and (max-width 480px)
+      font-size 1.5rem
+      margin-bottom 64px
   &__container
     height 100%
   &__wrap
@@ -95,6 +109,7 @@
   &__date
     position absolute
     top 0
+    width 120px
     left -30px
     transform translate(-100%)
     font-size 1.5rem
@@ -109,6 +124,9 @@
       font-size 1.2rem
     @media only screen and (max-width 767px)
       position static
+    @media only screen and (max-width 480px)
+      font-size 1.5rem
+      margin-bottom 4px
   &__title
     margin-bottom 23px
     font-weight normal
@@ -117,6 +135,9 @@
     font-family "Helios"
     @media only screen and (max-width 1023px)
       font-size 1.3rem
+    @media only screen and (max-width 480px)
+      font-size 1.125rem
+      margin-bottom 12px
   &__img
     margin-bottom 9px
     display flex
@@ -136,6 +157,8 @@
     line-height 1.5
     @media only screen and (max-width 1023px)
       font-size 1.2rem
+    @media only screen and (max-width 480px)
+      font-size 1rem
     &_cursive
       font-family "SangBleu Sunrise"
       font-style italic
@@ -155,6 +178,9 @@
     @media only screen and (max-width 767px)
       width 100%
       padding-top 15px
+    @media only screen and (max-width 480px)
+      width calc(100% + 32px)
+      margin-left -16px
     &__category
       display inline-block
       margin-bottom 6px
@@ -319,5 +345,50 @@
           width 10px
           height 10px
           background url("/images/video-sprite.png") -46px -10px no-repeat
-
+  &-quote
+    width 770px
+    margin-top 40px
+    padding 24px 30px 28px
+    background #F2F2F2
+    border-radius 4px
+    box-shadow 0 2px 3px rgba(0,0,0,0.1)
+    font-family "Cisco Sans", sans-serif
+    @media only screen and (max-width 1023px)
+      width 600px
+    @media only screen and (max-width 767px)
+      width 100%
+      padding 24px 20px 28px
+    @media only screen and (max-width: 480px)
+      width calc(100% + 32px)
+      margin-left -16px
+      padding 24px 16px 30px
+    &__text
+      margin-bottom 9px
+      font-size 1.25rem
+      line-height 1.6
+      color #333
+      @media only screen and (max-width 767px)
+        font-size 1rem
+      @media only screen and (max-width: 480px)
+        line-height 1.33
+      &_big
+        margin-top -13px
+        margin-bottom 6px
+        font-size 1.5rem
+        line-height 1.5
+        font-family "Helios"
+        @media only screen and (max-width 767px)
+          font-size 1.25rem
+        @media only screen and (max-width: 480px)
+          font-size 1.5rem
+        @media only screen and (max-width: 480px)
+          line-height 1.33
+          margin-top 0
+    &__cite
+      color rgba(0,0,0,.6)
+      font-size 1rem
+      line-height 1.5
+      font-family "Helios"
+      @media only screen and (max-width 767px)
+        font-size .9rem
 

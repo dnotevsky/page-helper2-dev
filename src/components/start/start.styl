@@ -13,6 +13,10 @@
     min-height 470px
     background url("/images/start_bg-mob.png") right top no-repeat, #010101
     background-size 150%
+  @media only screen and (max-width: 480px)
+    background url("/images/start_bg-mob-2.png") center bottom no-repeat, #010101
+    background-size 100%
+    min-height 620px
   &__header
     display flex
     justify-content space-between
@@ -20,6 +24,8 @@
     padding 36px 36px 0
     @media only screen and (max-width: 712px)
       padding 36px 20px 0
+    @media only screen and (max-width: 480px)
+      padding 16px 16px 0
   &__logos
     position relative
     display flex
@@ -35,6 +41,8 @@
       @media only screen and (max-width: 712px)
         left 40px
         height 30px
+      @media only screen and (max-width: 480px)
+        height 40px
     &_postnauka
       display inline-block
       margin-right 43px
@@ -42,12 +50,16 @@
       @media only screen and (max-width: 712px)
         height 30px
         margin-right 20px
+      @media only screen and (max-width: 480px)
+        height 40px
     &_bc
       position relative
       top 1px
       height 32px
       @media only screen and (max-width: 712px)
         height 30px
+      @media only screen and (max-width: 480px)
+        height 32px
   &__nav-link
     position absolute
     top 36px
@@ -58,6 +70,10 @@
     @media only screen and (max-width: 712px)
       right 20px
       width 98px
+    @media only screen and (max-width: 480px)
+      top 16px
+      right 16px
+      width 40px
     &_text
       width 59px
       margin-right 16px
@@ -67,6 +83,8 @@
         font-size .8rem
         margin-right 9px
         text-shadow 0 0 14px #010101
+      @media only screen and (max-width: 480px)
+        display none
     &_circle
       display block
       position relative
@@ -78,6 +96,9 @@
       @media only screen and (max-width: 712px)
         height 30px
         width 30px
+      @media only screen and (max-width: 480px)
+        width 40px
+        height 40px
       &:hover
         opacity .7
       &::before,
@@ -108,6 +129,10 @@
     padding-bottom 40px
     @media only screen and (max-width: 712px)
       max-width 480px
+      margin-top 0
+      height calc(100% - 56px)
+      display block
+      padding-top 52px
   &__title
     margin-bottom 65px
     font-size 5rem
@@ -119,6 +144,11 @@
     @media only screen and (max-width: 712px)
       font-size 2.1rem
       margin-bottom 35px
+    @media only screen and (max-width: 480px)
+      font-size 1.5rem
+      line-height 1.16
+      margin-bottom 16px
+      max-width 210px
   &__description
     font-size 2rem
     line-height 1.5
@@ -127,6 +157,9 @@
       text-shadow 0 0 14px #010101
     @media only screen and (max-width: 712px)
       font-size 1rem
+    @media only screen and (max-width: 480px)
+      font-size 1.5rem
+      text-shadow 2px 0 5px #010101
     &_cursive
       font-family "SangBleu Sunrise"
       font-style italic
@@ -137,6 +170,8 @@
     font-size 1rem
     font-weight bold
     letter-spacing .5px
+    @media only screen and (max-width: 480px)
+      bottom 32px
     &::after
       position relative
       top 2px

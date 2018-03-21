@@ -12,6 +12,12 @@
     width 100%
     margin-top 120px
     padding-top 15px
+  @media only screen and (max-width 480px)
+    margin-top 0
+    width calc(100% + 32px)
+    margin-left -16px
+    padding-top 24px
+    margin-bottom 64px
   &::before
     position absolute
     left -102px
@@ -30,6 +36,8 @@
     @media only screen and (max-width 767px)
       left 0
       top -61px
+    @media only screen and (max-width 480px)
+      display none
   &__category
     display inline-block
     margin-bottom 6px
@@ -43,8 +51,10 @@
       padding-left 20px
       font-size .65rem
       margin-bottom 5px
-    @media only screen and (max-width 425px)
-      font-size .6rem
+    @media only screen and (max-width 480px)
+      font-size .75rem
+      margin-bottom 6px
+      padding 0 16px
   &__title
     margin-bottom 24px
     padding-left 27px
@@ -58,8 +68,11 @@
       padding-left 20px
       margin-bottom 10px
       font-size 1.3rem
-    @media only screen and (max-width 425px)
-      font-size 1.1rem
+    @media only screen and (max-width 480px)
+      font-size 1.5rem
+      line-height 1.33
+      padding 0 16px
+      margin-bottom 16px
     &_author
       color rgba(0,0,0,.6)
   &__iframe
@@ -164,6 +177,17 @@
     @media only screen and (max-width 767px)
       padding 10px 20px
       flex-wrap wrap
+    @media only screen and (max-width 480px)
+      padding 16px
+      position relative
+      &::after
+        content ""
+        width 100%
+        height 1px
+        background rgba(0,0,0,.1)
+        position absolute
+        left 0
+        top 50%
     &-share
       color rgba(0, 0, 0, 0.6)
       font-size 1rem
@@ -171,6 +195,8 @@
       line-height 1.5
       @media only screen and (max-width 767px)
         margin-bottom 8px
+      @media only screen and (max-width 480px)
+        margin-bottom 32px
       &::before
         margin-right 8px
         content ""
@@ -193,3 +219,5 @@
         width 10px
         height 10px
         background url("/images/video-sprite.png") -46px -10px no-repeat
+        @media only screen and (max-width 480px)
+          transform rotate(-45deg)

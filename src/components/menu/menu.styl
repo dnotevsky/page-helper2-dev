@@ -10,7 +10,9 @@
   background-size cover
   color #fff
   font-family "Cisco Sans"
-  trnasition .3s ease-in-out all
+  transition .3s ease-in-out all
+  @media only screen and (max-width 767px)
+    min-height 594px
   &.hide
     display none
     height 0
@@ -23,10 +25,14 @@
     justify-content space-between
     align-items center
     padding 36px 36px 0
+    @media only screen and (max-width 767px)
+      padding 0
   &__logos
     position relative
     display flex
     align-items center
+    @media only screen and (max-width 767px)
+      display none
     &::before
       content ""
       position absolute
@@ -44,6 +50,10 @@
       top 1px
       height 32px
   &__nav-link
+    @media only screen and (max-width 767px)
+      position absolute
+      top 16px
+      right 16px
     &_circle
       display block
       position relative
@@ -74,10 +84,15 @@
   &__row
     margin-top 70px
     padding-left 36px
+    @media only screen and (max-width 767px)
+      padding 0 16px
+      margin-top 77px
   &__left
     margin-top -41px
     width 370px
     margin-right 161px
+    @media only screen and (max-width 767px)
+      display none
   &__description
     margin-bottom 62px
     font-size 1.25rem
@@ -119,6 +134,8 @@
     font-size 1.5rem
     line-height 1.25
     transition .5s ease-in-out all
+    @media only screen and (max-width 767px)
+      font-size .9rem
     &_active
       color #E34F2D
     &:hover
@@ -126,6 +143,8 @@
   &__link
     margin-bottom 32px
     display inline-block
+    @media only screen and (max-width 767px)
+      margin-bottom 16px
     &-date
       position absolute
       display inline-block
@@ -133,6 +152,12 @@
       top 0
       transform translate(-100%)
       color rgba(255,255,255,.5)
+      @media only screen and (max-width 767px)
+        position static
+        display block
+        margin-bottom 5px
+        font-size .9rem
+        transform none
   &__category
     display block
     margin-bottom -3px
@@ -147,6 +172,8 @@
     position absolute
     left 36px
     bottom 55px
+    @media only screen and (max-width 767px)
+      display none
     &-text
       display block
       margin-bottom 11px

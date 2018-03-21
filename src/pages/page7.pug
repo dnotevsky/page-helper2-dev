@@ -1,0 +1,33 @@
+include ./../components/index.pug
+
+doctype html
+html.ua(lang="ru")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+  body
+    +header
+    +menu
+    //- Страница 7
+    div.wrapper
+      div.content.content_7
+        a.content__nav-link(href="#")
+          span.content__nav-link_text Все<br/>встречи
+          span.content__nav-link_circle
+        div.container.content__container
+          h1.content__title Сотрудничество<br/>в 21 веке
+          div.events
+            +event_31
+            +video_9
+            +event_32
+            +event_33
+            +event_34
+            +article_3
+            +event_35
+            +article_4
+            +event_36
+            +article_5
+      +fact_7
+    +footer

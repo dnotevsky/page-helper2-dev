@@ -9,6 +9,8 @@
     margin-right 0
     background #d6d2cd
     padding 10px 0
+  @media only screen and (max-width: 480px)
+    margin-bottom 64px
   &__date
     position absolute
     top 0
@@ -30,6 +32,9 @@
     @media only screen and (max-width 767px)
       position static
       font-size 1.3rem
+    @media only screen and (max-width: 480px)
+      font-size 1.25rem
+      line-height 1.5
   &__title
     margin-bottom 23px
     font-weight normal
@@ -40,6 +45,8 @@
       font-size 1.3rem
     @media only screen and (max-width 767px)
       font-size 1.2rem
+    @media only screen and (max-width: 480px)
+      font-size 1.125rem
   &__img
     display flex
     justify-content center
@@ -53,6 +60,12 @@
     background-position right top
     img
       max-width 90%
+    @media only screen and (max-width: 480px)
+      margin-bottom 32px
+      width calc(100% + 32px)
+      margin-left -16px
+      height 300px
+      background #F2F2F2 !important
   &__text
     font-size 1.125rem
     line-height 1.5

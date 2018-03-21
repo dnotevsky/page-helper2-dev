@@ -1,31 +1,57 @@
 .nav
-	display flex
-	background #010101
-	&__item
-		display block
-		width 50%
-		padding 79px 80px 104px
-		background-color #010101
-		transition .5s ease-in-out all
-		&:last-child
-			border-left 1px solid rgba(255,255,255,.3)
-		&:hover
-			background-color #EB663A
-			.nav__text
-				color #fff
-	&__text
-		margin-bottom 16px
-		display inline-block
-		font-size 1.5rem
-		line-height 1.5
-		color rgba(255,255,255,.5)
-		font-family "Helios"
-		transition .5s ease-in-out all
-		&_orange
-			color #E34F2D
-	&__title
-		font-size 2.5rem
-		line-height 1
-		color #fff
-		font-family "Helios"
-		font-weight 900
+  display flex
+  background #010101
+  @media only screen and (max-width 767px)
+    flex-wrap wrap
+  &__item
+    display block
+    width 50%
+    padding 79px 80px 104px
+    background-color #010101
+    transition .5s ease-in-out all
+    @media only screen and (max-width 1023px)
+      padding 50px 30px 70px
+    @media only screen and (max-width 767px)
+      width 100%
+      padding 40px 20px 60px
+    @media only screen and (max-width 480px)
+      padding 32px 16px 48px
+    &:last-child
+      border-left 1px solid rgba(255,255,255,.3)
+      @media only screen and (max-width 767px)
+        border none
+        border-top 1px solid rgba(255,255,255,.3)
+    &:hover
+      background-color #EB663A
+      .nav__text
+        color #fff
+  &__text
+    margin-bottom 16px
+    display inline-block
+    font-size 1.5rem
+    line-height 1.5
+    color rgba(255,255,255,.5)
+    font-family "Helios"
+    transition .5s ease-in-out all
+    @media only screen and (max-width 1023px)
+      font-size 1.2rem
+    @media only screen and (max-width 767px)
+      font-size 1.1rem
+    @media only screen and (max-width 480px)
+      font-size 1.125rem
+      margin-bottom 12px
+    &_orange
+      color #E34F2D
+  &__title
+    font-size 2.5rem
+    line-height 1
+    color #fff
+    font-family "Helios"
+    font-weight 900
+    @media only screen and (max-width 1023px)
+      font-size 2rem
+    @media only screen and (max-width 767px)
+      font-size 1.7rem
+    @media only screen and (max-width 480px)
+      font-size 1.5rem
+      line-height 1.16
