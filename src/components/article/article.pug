@@ -1,0 +1,9 @@
+mixin article(title, author, text)
+  div.article
+    span.article__category Статья
+    h2.article__title= title
+      span.article__title_author= author
+    p.article__description= text
+    a.article__read(href="#")
+      span.article__read-text Читать
+      span.article__read-time ~8 мин
