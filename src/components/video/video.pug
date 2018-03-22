@@ -1,0 +1,10 @@
+mixin video(title, author)
+	div.video
+		span.video__category Видеолекция
+		h2.video__title= title
+			span.video__title_author= author
+		div.video__iframe
+			iframe(src="https://www.youtube.com/embed/CGP3HcRjzx0", frameborder="0", allow="autoplay; encrypted-media" allowfullscreen)
+		div.video__bottom
+			a.video__bottom-share(href="#") Отправьте видео другу
+			a.video__bottom-text(href="#") Текстовая расшифровка
