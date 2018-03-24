@@ -43,6 +43,7 @@
         height 30px
       @media only screen and (max-width: 480px)
         height 40px
+        left 50px
     &_postnauka
       display inline-block
       margin-right 43px
@@ -60,62 +61,6 @@
         height 30px
       @media only screen and (max-width: 480px)
         height 32px
-  &__nav-link
-    position absolute
-    top 36px
-    right 36px
-    display flex
-    align-items center
-    width 115px
-    @media only screen and (max-width: 712px)
-      right 20px
-      width 98px
-    @media only screen and (max-width: 480px)
-      top 16px
-      right 16px
-      width 40px
-    &_text
-      width 59px
-      margin-right 16px
-      font-size 1rem
-      text-align right
-      @media only screen and (max-width: 712px)
-        font-size .8rem
-        margin-right 9px
-        text-shadow 0 0 14px #010101
-      @media only screen and (max-width: 480px)
-        display none
-    &_circle
-      display block
-      position relative
-      width 40px
-      height 40px
-      border-radius 50%
-      background #fff
-      transition .5s ease-in-out all
-      @media only screen and (max-width: 712px)
-        height 30px
-        width 30px
-      @media only screen and (max-width: 480px)
-        width 40px
-        height 40px
-      &:hover
-        opacity .7
-      &::before,
-      &::after
-        display inline-block
-        position absolute
-        top 50%
-        left 50%
-        transform translate(-50%, -50%)
-        content ""
-        background #000
-      &::before
-        width 14px
-        height 1px
-      &::after
-        width 1px
-        height 14px
   &__container
     height 100%
   &__text-block
@@ -152,7 +97,6 @@
   &__description
     font-size 2rem
     line-height 1.5
-    letter-spacing 1px
     @media only screen and (max-width 1023px)
       text-shadow 0 0 14px #010101
     @media only screen and (max-width: 712px)
@@ -169,7 +113,6 @@
     bottom 15px
     font-size 1rem
     font-weight bold
-    letter-spacing .5px
     @media only screen and (max-width: 480px)
       bottom 32px
     &::after
@@ -180,4 +123,4 @@
       content ""
       width 11px
       height 14px
-      background url("/images/main-sprite.png") -92px -41px no-repeat
+      background url("/images/icons/orange-arrow.svg") center center no-repeat

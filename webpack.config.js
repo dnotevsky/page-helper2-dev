@@ -528,6 +528,30 @@ module.exports = {
       to: path.resolve(__dirname, "./dist/components/event_15/style.styl")
     }]),
 
+    // for event_16
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_16/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_16/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_16/event_16.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_16/style.styl")
+    }]),
+
+    // for event_17
+    new HTMLPlugin({
+      filename: path.resolve(__dirname, "./dist/components/event_17/component.html"),
+      template: path.resolve(__dirname, "./src/components/event_17/component.pug"),
+      hash: false,
+      inject: false
+    }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './src/components/event_17/event_17.styl'),
+      to: path.resolve(__dirname, "./dist/components/event_17/style.styl")
+    }]),
+
     // for event_big
     new HTMLPlugin({
       filename: path.resolve(__dirname, "./dist/components/event_big/component.html"),

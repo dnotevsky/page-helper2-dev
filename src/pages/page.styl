@@ -23,11 +23,12 @@ textarea
 html
   font-size 16px
   line-height 1.25
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
 
 .wrapper
   margin 0 auto
   width 100%
-  max-width 1600px
 
 .container
   width 100%
@@ -43,7 +44,7 @@ html
 
 //Стили контента
 .content
-  padding 42px 0 0
+  padding 64px 0 0
   background #d6d2cd
   color #000
   font-family "Cisco Sans"
@@ -129,6 +130,22 @@ html
       width 40px
       top 16px
       right 16px
+    &.above-black
+      .content__nav-link_text
+        color #fff
+      .content__nav-link_circle
+        background #fff
+        &::before,
+        &::after
+          background #000
+    &.above-fact
+      .content__nav-link_text
+        color #1b1a1a
+      .content__nav-link_circle
+        background #fff
+        &::before,
+        &::after
+          background #000
     &_text
       margin-right 16px
       font-size 1rem
@@ -176,7 +193,7 @@ html
         width 1px
         height 14px
   &__title
-    margin-bottom 105px
+    margin-bottom 92px
     font-size 5rem
     line-height 1
     font-family "Helios"
@@ -196,7 +213,7 @@ html
 
 .events
   position relative
-  padding-bottom 90px
+  padding-bottom 80px
   @media only screen and (max-width 1023px)
     max-width 728px
     margin 0 auto

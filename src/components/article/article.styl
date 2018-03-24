@@ -1,11 +1,21 @@
 .article
   position relative
-  margin 0 auto 59px
+  display block
+  margin 0 auto 64px
   width 770px
   padding 28px 30px
   background #FFFFFF
   border-radius 4px
   box-shadow 0 2px 3px rgba(0,0,0,0.1)
+  cursor pointer
+  &:hover
+    .article__title,
+    .article__title_author
+      color #E34F2D
+    .article__read
+      color #000
+      &::after
+        filter brightness(0)
   @media only screen and (max-width 1023px)
     width 600px
   @media only screen and (max-width 767px)
@@ -25,7 +35,7 @@
     height 52px
     border 10px solid #D6D2CD
     border-top-width 3px
-    background url("/images/article.png") center center no-repeat, #D6D2CD
+    background url("/images/icons/article.svg") center center no-repeat, #D6D2CD
     @media only screen and (max-width 1199px)
       left -8vw
     @media only screen and (max-width 1023px)
@@ -46,10 +56,11 @@
     line-height 1.33
     text-transform uppercase
   &__title
-    margin-bottom -1px
+    margin-bottom 4px
     font-size 2.25rem
     line-height 1.16
     font-weight bold
+    transition .3s ease-in-out
     @media only screen and (max-width 767px)
       font-size 1.8rem
       margin-bottom 7px
@@ -59,8 +70,9 @@
       display inline-block
       font-weight normal
       color rgba(0,0,0,.5)
+      transition .3s ease-in-out
   &__description
-    margin-bottom 31px
+    margin-bottom 28px
     font-family "Helios"
     color rgba(0,0,0,.6)
     font-size 1.5rem
@@ -75,6 +87,7 @@
     color #E34F2D
     font-size 1rem
     line-height 1.25
+    transition .3s ease-in-out
     @media only screen and (max-width 767px)
       font-size .9rem
     &-text
@@ -85,10 +98,11 @@
     &::after
       content ""
       width 11px
-      height 14px
+      height 15px
       display inline-block
       margin-left 10px
       top 2px
       position relative
-      background url("/images/main-sprite.png") -92px -41px no-repeat
+      background url("/images/icons/orange-arrow.svg") center center no-repeat
       transform rotate(-136deg)
+      transition .3s ease-in-out
