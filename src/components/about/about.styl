@@ -22,29 +22,30 @@
     @media only screen and (max-width: 480px)
       padding-top 64px
       padding-bottom 64px
-  &__text-block
-    column-count 2
-    column-gap 60px
-    @media only screen and (max-width 767px)
-      column-count 1
   &__text
+    width calc(50% - 30px)
     font-size 1.5rem
     line-height 1.5
+    float left
+    &::after
+      content ""
+      display table
+      clear both
     @media only screen and (max-width 1023px)
       font-size 1.2rem
     @media only screen and (max-width 767px)
+      float none
+      width 100%
       font-size 1rem
     @media only screen and (max-width: 480px)
       font-size 1.25rem
     &:first-child
-      max-width 530px
-      @media only screen and (max-width 767px)
-        max-width 100%
+      margin-right 60px
       @media only screen and (max-width: 480px)
-        margin-bottom 15px
+        margin-bottom 0
     &:nth-last-child(2)
       position relative
-      text-indent 2rem
+      text-indent 3rem
       &::after
         content ""
         position relative
@@ -79,7 +80,11 @@
     &_cursive
       font-style italic
   &__share
-    margin-top 28px
+    position relative
+    top 28px
+    @media only screen and (max-width 767px)
+      top 0
+      margin-top 28px
     &-text
       display block
       margin-bottom 10px
